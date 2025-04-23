@@ -19,7 +19,7 @@ pip install pymysql
 - ### Consideraciones importantes: 
   1. Hasta el momento la base de datos cuenta con 250 libros cons sus ponderaciones difusas correspondientes (sin que existan duplicados).
   2. Se implemento una nueva tabla en la base de datos llamada *libros_difusos* la cual contiene el titulo, autor y las respetcivas ponderaciones difusas para cada libro.
-  3. Si se quieren insertar más libros se pueden utilizar los scripts de python para ingresar un prompt que brinde más libros en formato json establecido y se puede utilizar el txt de los libros que ya hay para evitar duplicados.
+  3. Si se quieren insertar más libros se pueden utilizar los scripts de python para ingresar un prompt que brinde más libros en el formato json establecido y se puede utilizar el txt de los libros que ya hay para evitar duplicados.
   4. Para la base de datos se esta utilizando Xampp con una base de datos llamada *recomendaciones_libros*
 
 
