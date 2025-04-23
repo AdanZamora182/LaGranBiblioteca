@@ -1,0 +1,696 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 11,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "m3s_zAEACAAJ",
+      "etag": "D7R+sG+s3/4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/m3s_zAEACAAJ",
+      "volumeInfo": {
+        "title": "Buscando Esposa",
+        "authors": [
+          "Julia Quinn"
+        ],
+        "publisher": "Urano",
+        "publishedDate": "2020-06-30",
+        "description": "El último Bridgerton soltero ha empezado la búsqueda de la mujer de sus sueños. Es el único de los hermanos que no ha pasado por el altar y, por su carácter romántico, jamás aceptaría un matrimonio por conveniencia. Pero Gregory se enamora de la mujer equivocada, mientras que la cauta y delicada Lucy Abernathy no se da cuenta de sus atenciones. Cuando, por fin, el joven escuche realmente el latir de sus sentimientos, ya será demasiado tarde: Lucy se encuentra a las puertas de la iglesia a punto de casarse con otro hombre. Gregory deberá recurrir a su ingenio y valentía si no quiere perder a la mujer de su vida. En esta entrega, Julia Quinn invita a sus lectores a asistir al último capítulo de su popular y aclamada serie sobre los Bridgerton, con un desenlace lleno de romance, humor y calidez. Una obra plagada de divertidos diálogos, finalista de dos importantes premios en el género romántico que hará las delicias de toda su legión de fans.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8416327890"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788416327898"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=m3s_zAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=m3s_zAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=m3s_zAEACAAJ&dq=subject:romance&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=m3s_zAEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Buscando_Esposa.html?hl=&id=m3s_zAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=m3s_zAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "kAT5jgEACAAJ",
+      "etag": "4vocEZxx3do",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kAT5jgEACAAJ",
+      "volumeInfo": {
+        "title": "El eterno asombro",
+        "authors": [
+          "Pearl S. Buck"
+        ],
+        "publishedDate": "2016",
+        "description": "This is the story of Rann, an extraordinarily gifted young man whose search for meaning and purpose leads him to New York, England, and Paris, a mission patrolling the DMZ in Korea that will change his life forever. Rann falls for the beautiful Stephanie Kung, who lives in Paris with her Chinese father. Both of them yearn for a sense of genuine identity.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8490701679"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788490701676"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kAT5jgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kAT5jgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=kAT5jgEACAAJ&dq=subject:romance&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=kAT5jgEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_eterno_asombro.html?hl=&id=kAT5jgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kAT5jgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dd3wjgEACAAJ",
+      "etag": "8q0Rc1aKDtU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dd3wjgEACAAJ",
+      "volumeInfo": {
+        "title": "La chocolatería más dulce de París",
+        "authors": [
+          "Jenny Colgan"
+        ],
+        "publishedDate": "2016",
+        "description": "Mientras amanece sobre el Pont Neuf y las callejeulas de París cobran vida, Anna Trent ya está despierta y trabajando, mezclando y revolviendo el mejor chocolate, el más suave y más delicious, elaborado artesnalmente y apreciado por las grandes dames de París...Un mundo muy diferente del de la fábrica de chocolate en que trabajaba en su cuidad natal del norte de Inglaterra. El cambio ha sido posible gracias a su reencuentro con Claire, su profesora de francés, quien le ofreció la oportunidad de su vida: trabajar en París con Thierry, su antiguo novio, un maestro chocolatero. Cargando con antiguas heridas, Anna se dispone a descubrir más cosas sobre el auténtico chocolate, sobre Claire y Thierry-- y sobre ella misma-- de lo que jamás había soñado.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8466658017"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788466658010"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dd3wjgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dd3wjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=dd3wjgEACAAJ&dq=subject:romance&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=dd3wjgEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_chocolater%C3%ADa_m%C3%A1s_dulce_de_Par%C3%ADs.html?hl=&id=dd3wjgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dd3wjgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "qJsIPQAACAAJ",
+      "etag": "fTOKKVOmM/o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/qJsIPQAACAAJ",
+      "volumeInfo": {
+        "title": "La muchacha de las bragas de oro",
+        "authors": [
+          "Juan Marsé"
+        ],
+        "publishedDate": "2006",
+        "description": "Luys Forest es un olvidado escritor falangista. Viudo desde hace años, dedica su decadente soledad a escribir unas memorias llenas de falsedades, donde los pasajes de su vida política comprometida con el Régimen son maquillados constantemente para darles una pátina de luminosidad poética que evapore tanta vulgaridad. La llegada de su sobrina Mariana, una muchacha de mente afilada y cínica, supone un cambio brusco en la cotidianidad de Luys, despertando el único período verdaderamente novelesco en su vida.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8408065750"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788408065753"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Romance"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qJsIPQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qJsIPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=qJsIPQAACAAJ&dq=subject:romance&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=qJsIPQAACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_muchacha_de_las_bragas_de_oro.html?hl=&id=qJsIPQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=qJsIPQAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "084PogEACAAJ",
+      "etag": "z84/gQENMto",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/084PogEACAAJ",
+      "volumeInfo": {
+        "title": "Valeria en el Espejo",
+        "authors": [
+          "Elísabet Benavent"
+        ],
+        "publisher": "Punto de Lectura",
+        "publishedDate": "2015-01-30",
+        "description": "Engánchate al fenomeno Valeria ¡Te vas a enamorar! Valeria está inmersa en una vorágine emocional. Valeria acaba de publicar su novela y tiene miedo a las críticas. Valeria se está divorciando de Adrián y no es fácil. Valeria no sabe si quiere tener una relación con Víctor. Y mientras Valeria teme, llora, disfruta, sueña...... Lola no sabe qué hacer con Sergio. Se siente sola.... Carmen se ha despedido y lucha por comprender a Borja, su novio y antiguo compañero de trabajo.... y Nerea se levanta cada mañana con náuseas. La publicación en Internet de En los zapatos de Valeria despertó la curiosidad de centenares de lectores, que se entregaron a la lectura de las peripecias de Valeria y sus amigas. Adictiva, desternillante, sugerente y sensual, Valeria regresa para adueñarse de tu cabeza para que rías, llores, te desesperes... y para que, tal vez, vuelvas a creer en el amor.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8466328122"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788466328128"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Chick lit"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=084PogEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=084PogEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=084PogEACAAJ&dq=subject:romance&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=084PogEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Valeria_en_el_Espejo.html?hl=&id=084PogEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=084PogEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "JsIGDQEACAAJ",
+      "etag": "hX91IjrXdlQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/JsIGDQEACAAJ",
+      "volumeInfo": {
+        "title": "Brezo Blanco",
+        "authors": [
+          "Nieves Hidalgo"
+        ],
+        "publishedDate": "2016-11-30",
+        "description": "Una preciosa historia de amor ambientada en las idl̕icas Highlands.Repleta de humor, ternura y pasin̤ y unos desencuentros entre la pareja protagonista llenos de tensin̤ y deseo.Los clanes McDurney y McFeresson estǹ enfrentados desde hace dčadas.Cuando para evitar una guerra con los McFeresson, Josleen McDurney ayuda a escapar al individuo al que sus guardias han hecho prisionero, no imagina que deja en libertad al hombre que marcar ̀su futuro.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8490702837"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788490702833"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Clans"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=JsIGDQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=JsIGDQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=JsIGDQEACAAJ&dq=subject:romance&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=JsIGDQEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Brezo_Blanco.html?hl=&id=JsIGDQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=JsIGDQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "KBuQMQEACAAJ",
+      "etag": "cydO03UXn48",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/KBuQMQEACAAJ",
+      "volumeInfo": {
+        "title": "Seducida",
+        "authors": [
+          "Julianne MacLean"
+        ],
+        "publishedDate": "2013-01-30",
+        "description": "Catherine es una hermosa muchacha de origen noble; al menos, eso le han dicho. Lo cierto es que sufre de amnesia y no recuerda nada de sus orígenes. Desesperada por averiguar quién es realmente, cuando se cruza con Lachlan MacDonald un sexto sentido le dice que ese aguerrido escocés posee la llave para desentrañar el misterio de su pasado e, incluso, para llegar a su corazón. Pero, tras perder a su mujer, MacDonald es un hombre torturado, y cuando posa los ojos sobre la bella Catherine cree reconocer en ella a la bruja que lo maldijo para toda la eternidad. Ahora, Catherine corre el riesgo de ser presa de la legendaria ira de MacDonald, que tantas vidas ha segado en el campo de batalla. El duro guerrero escocés es un luchador nato, pero la furia que siente contra la desmemoriada Catherine se va convirtiendo en algo cada vez más distinto y perturbador, y él mismo no sabe cuánto tiempo podrá luchar contra su propio deseo.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8492916338"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788492916337"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=KBuQMQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=KBuQMQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=KBuQMQEACAAJ&dq=subject:romance&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=KBuQMQEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Seducida.html?hl=&id=KBuQMQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=KBuQMQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "pdAmAQAAMAAJ",
+      "etag": "IlwhSP8q/rg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/pdAmAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Libros de caballerías",
+        "authors": [
+          "Garci Rodríguez de Montalvo"
+        ],
+        "publishedDate": "1963",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39076006890508"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 690,
+        "printType": "BOOK",
+        "categories": [
+          "Romance"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.11.11.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=pdAmAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=pdAmAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=pdAmAQAAMAAJ&dq=subject:romance&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=pdAmAQAAMAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Libros_de_caballer%C3%ADas.html?hl=&id=pdAmAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=pdAmAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "92HMNwAACAAJ",
+      "etag": "XwP9fj2mEP0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/92HMNwAACAAJ",
+      "volumeInfo": {
+        "title": "Alcanzar una estrella",
+        "authors": [
+          "Ivette Gonzalez"
+        ],
+        "publishedDate": "1999",
+        "description": "A limo driver for a temperamental actress learns there's more to the beautiful, willful Marta than anyone suspects. All she needs is guidance from someone other than her doting daddy. With Mario's help, Marta learns to trust her own instincts--which include falling into the arms of her sexy chauffeur.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0786010193"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780786010196"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Miami (Fla.)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=92HMNwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=92HMNwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=92HMNwAACAAJ&dq=subject:romance&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=92HMNwAACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alcanzar_una_estrella.html?hl=&id=92HMNwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=92HMNwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Bx0pjgEACAAJ",
+      "etag": "gxyifXM7+Do",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Bx0pjgEACAAJ",
+      "volumeInfo": {
+        "title": "Detrás del telón",
+        "authors": [
+          "Mar Carrión"
+        ],
+        "publisher": "Roca Editorial",
+        "publishedDate": "2016-02-28",
+        "description": "Arlene Sanders siente que ha tocado fondo. Sus días de gloria como cantante en los mejores clubes de Brooklyn y Manhattan terminaron cuando decidió poner punto y final a una relación amorosa con su jefe, un magnate de los negocios que no acepta la ruptura y reduce la vida profesional de Arlene a cenizas. Ahora sobrevive tocando la guitarra en las calles y cantando en un pequeño bar dos veces a la semana. Dylan Jansen es el fundador y director de una compañía que representa obras musicales en pequeños teatros de la ciudad. Tras el espeluznante y misterioso incidente que trunca la carrera de una de sus actrices secundarias, Dylan escucha cantar a Arlene en las calles y, seducido por su voz, su carisma y su belleza, le ofrece un empleo que podría relanzar su carrera artística. La vida parece que vuelve a sonreírle a Arlene, aunque pronto descubrirá que su talento causa muchas envidias malsanas entre algunos de sus compañeros, que su antiguo jefe reaparece con la intención de devolverla a las calles y que la fuerte atracción que siente por Dylan amenaza con destruir sus firmes propósitos de no volver a cometer antiguos errores.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8415952708"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788415952701"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Bx0pjgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Bx0pjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=Bx0pjgEACAAJ&dq=subject:romance&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=Bx0pjgEACAAJ&dq=subject:romance&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Detr%C3%A1s_del_tel%C3%B3n.html?hl=&id=Bx0pjgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Bx0pjgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 34,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "bijBwAEACAAJ",
+      "etag": "TO+m5+RLpvw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bijBwAEACAAJ",
+      "volumeInfo": {
+        "title": "Muertos incómodos",
+        "subtitle": "falta lo que falta",
+        "authors": [
+          "Marcos (subcomandante.)",
+          "Subcomandante Insurgente Marcos",
+          "Paco Ignacio Taibo (II)"
+        ],
+        "publisher": "Joaquin Mortiz",
+        "publishedDate": "2005",
+        "description": "Novela policíaca escrita por dos autores, que asocia por vez primera en la historia del género a un conocido personaje político con un novelista. Es, también, un descenso a los infiernos de los abusos del poder en México. Una serie de desconcertantes llamadas que supuestamente provienen de un militante estudiantil asesinado en 1971 ponen a Héctor Belascoarán Shayne, detective privado, sobre la pista de un tal Morales, fuente y eje de innumerables crímenes protagonizados a la sombra del aparato estatal mexicano. Simultáneamente, en la selva chiapaneca, el investigador zapatista Elías Contreras recibe el encargo de seguir las huellas de Morales que, según los papeles que la familia de Manuel Vázquez Montalbán hace llegar al EZLN, estaba involucrado en misteriosas operaciones criminales y en una extraña relación que va de Barcelona a la ciudad de México pasando por Chiapas.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9682710057"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789682710056"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bijBwAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bijBwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=bijBwAEACAAJ&dq=subject:mystery&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=bijBwAEACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Muertos_inc%C3%B3modos.html?hl=&id=bijBwAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bijBwAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "38vKjgEACAAJ",
+      "etag": "aw59vw8aL/c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/38vKjgEACAAJ",
+      "volumeInfo": {
+        "title": "La Carta Robada / The Purloined Letter",
+        "authors": [
+          "Edgar Allan Poe"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2015-10-20",
+        "description": "La carta robada, es un cuento de género policial, su historia transcurre en París en los años 1800. Un prefecto de la policía recurre al detective Dupin y a su amigo, el narrador, con el objetivo de resolver el caso de una carta robada en las cámaras reales, la cual, el ladrón usa para obtener poder sobre él con fines políticos. El ladrón, es el Ministro D***, el cual fue visto por la víctima y un tercero, robando la carta. Dupin se niega a tomar el caso, dando consejos al Prefecto de cómo revisar la propiedad del ladrón, a efectos de hallar la carta en cuestión, ya que han sido infructuosas las cuantiosas búsquedas efectuadas. El prefecto procede a realizar una serie de allanamientos en la mansión del ministro D***, inspeccionando con microscopio cada rincón, mueble y objeto posible de la casa, donde la carta podría haber sido escondida, pero sus intentos, tal como la primera vez, fueron en vano. Sin saber qué más hacer o dónde buscar, el Prefecto vuelve por la ayuda de Dupin, ofreciéndole una gran recompensa por resolver el caso. Dupin acepta, para entregarle la carta que él ya había recuperado por sus propios medios, utilizando procedimientos más simples que los del prefecto. Dupin se puso en lugar del ladrón, lo analizó, y dedujo que éste no sería capaz de esconderla en lugares donde posiblemente la policía podría revisar, sino en el sitio más simple y visible, donde, por la naturaleza expuesta del lugar, la carta no sería buscada ni sospechada. Encontró la carta en un tarjetero, muy manchada y arrugada, se hallaba rota, casi en dos, por el medio, como si una primera intención de hacerla pedazos por su nulo valor hubiera sido cambiado y detenido. Dupin robó la carta y la reemplazó fácilmente por otra que había preparado cuidadosamente en casa, imitando el monograma de D***, con mucha facilidad, por medio de un sello de miga de pan... SehThe unnamed narrator is discussing with the famous Parisian amateur detective C. Auguste Dupin some of his most celebrated cases when they are joined by the Prefect of the Police, a man known as G-. The Prefect has a case he would like to discuss with Dupin.A letter has been stolen from the boudoir of an unnamed female by the unscrupulous Minister D-. It is said to contain compromising information. D- was in the room, saw the letter, and switched it for a letter of no importance. He has been blackmailing his victim.The Prefect makes two deductions with which Dupin does not disagree:The contents of the letter have not been revealed, as this would have led to certain circumstances that have not arisen. Therefore, Minister D- still has the letter in his possession.The ability to produce the letter at a moment's notice is almost as important as actual possession of the letter. Therefore, he must have the letter close at hand.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1518700748"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781518700743"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 64,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=38vKjgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=38vKjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=38vKjgEACAAJ&dq=subject:mystery&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=38vKjgEACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Carta_Robada_The_Purloined_Letter.html?hl=&id=38vKjgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=38vKjgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ivDPPQAACAAJ",
+      "etag": "C0OTft54Kwc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ivDPPQAACAAJ",
+      "volumeInfo": {
+        "title": "La chica que amaba a Tom Gordon",
+        "authors": [
+          "Stephen King"
+        ],
+        "publisher": "DEBOLSILLO",
+        "publishedDate": "2003",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8497593677"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788497593670"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ivDPPQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ivDPPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=ivDPPQAACAAJ&dq=subject:mystery&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=ivDPPQAACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_chica_que_amaba_a_Tom_Gordon.html?hl=&id=ivDPPQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ivDPPQAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QfpGAAAACAAJ",
+      "etag": "ra/Juv5LJpk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QfpGAAAACAAJ",
+      "volumeInfo": {
+        "title": "Grimpow",
+        "subtitle": "el camino invisible",
+        "authors": [
+          "Rafael Ábalos"
+        ],
+        "publisher": "MONTENA",
+        "publishedDate": "2008",
+        "description": "In 1313, a boy named Grimpow discovers the frozen body of a man carrying an enigmatic stone that will lead him on a quest that will change his life forever.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8484412768"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788484412762"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Antiques & Collectibles"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QfpGAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QfpGAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=QfpGAAAACAAJ&dq=subject:mystery&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=QfpGAAAACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Grimpow.html?hl=&id=QfpGAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QfpGAAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WYpdAAAAMAAJ",
+      "etag": "WMg5RoNXvKY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WYpdAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Dafne desvanecida",
+        "authors": [
+          "José Carlos Somoza"
+        ],
+        "publishedDate": "2000",
+        "description": "\"Me he enamorado de una mujer desconocida. Con esta frase comienza todo para Juan Cabo, un escritor de exito que queda completamente amnesico tras un accidente de trafico. Es la frase inicial de un breve parrafo que el mismo escribio horas antes del accidente. Pero quien es esa \"\"mujer desconocida\"\"? Existe realmente o se trata de una mera creacion literaria? Solo un poeta aficionado parece poseer la clave del misterio, pero muere en circunstancias extranas antes de que Cabo pueda entrevistarse con el. (Finalista Premio \"\"Nadal\"\" 2000)\"",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015050150674"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 250,
+        "printType": "BOOK",
+        "categories": [
+          "Cuban literature"
+        ],
+        "averageRating": 2,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.7.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WYpdAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WYpdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=WYpdAAAAMAAJ&dq=subject:mystery&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=WYpdAAAAMAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Dafne_desvanecida.html?hl=&id=WYpdAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WYpdAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "R2hkAAAACAAJ",
+      "etag": "VC2mFatfRcM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/R2hkAAAACAAJ",
+      "volumeInfo": {
+        "title": "El Poeta",
+        "authors": [
+          "Michael Connelly"
+        ],
+        "publishedDate": "1997-04-02",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8440672489"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788440672483"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 456,
+        "printType": "BOOK",
+        "categories": [
+          "Asesinos Seriales"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=R2hkAAAACAAJ&dq=subject:mystery&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=R2hkAAAACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Poeta.html?hl=&id=R2hkAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=R2hkAAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vZuLZwEACAAJ",
+      "etag": "3+w9TLfUjU0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vZuLZwEACAAJ",
+      "volumeInfo": {
+        "title": "Martes",
+        "authors": [
+          "David Wiesner"
+        ],
+        "publisher": "OCEANO TRAVESÍA",
+        "publishedDate": "2012-04",
+        "description": "Un martes al caer la noche, las ranas en un estanque despegan en dirección a una ciudad cercana. Los impredecibles acontecimientos de este martes tan peculiar se despliegan ante el lector con la precisión y claridad de una película muda. ¿Qué pasará el próximo martes? Un libro surrealista, ganador de la prestigiosa Medalla Caldecott. Medalla",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6074003386"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786074003383"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vZuLZwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vZuLZwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=vZuLZwEACAAJ&dq=subject:mystery&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=vZuLZwEACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Martes.html?hl=&id=vZuLZwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vZuLZwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "seE20AEACAAJ",
+      "etag": "+vW+lqdob0o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/seE20AEACAAJ",
+      "volumeInfo": {
+        "title": "La Naturaleza Secreta de Las Cosas de Este Mundo",
+        "authors": [
+          "Patricio Pron"
+        ],
+        "publisher": "Editorial Anagrama",
+        "publishedDate": "2024-01-30",
+        "description": "Who are we really? What makes us the people we think we are, and what happens when what we thought we were gives way to something else? What is the secret nature of the things of this world? Olivia heads to Manchester. And what she will remember is something she forgot she knew about her father, who disappeared when she was fourteen. Olivia is an actress. Edward Byrne was a visual artist; when he left, he left hundreds of unanswered questions, but no evidence, no certainty, no corpse... Patricio Pron debuts at Editorial Anagrama with a novel about family, flight, loss and its paradoxical advantages; about imposture, vocation, fear of the future and the possibility that the deep meaning of the things of this world is found in the stories we tell ourselves. A magnetic and unique detective story about those mysteries that are part of our most secret nature.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "843391118X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788433911186"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=seE20AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=seE20AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=seE20AEACAAJ&dq=subject:mystery&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=seE20AEACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Naturaleza_Secreta_de_Las_Cosas_de_Es.html?hl=&id=seE20AEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=seE20AEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uCzfAAAACAAJ",
+      "etag": "OEJisCGuDfE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uCzfAAAACAAJ",
+      "volumeInfo": {
+        "title": "Explicación del símbolo ; los sacramentos ; los misterios",
+        "authors": [
+          "Ambrose (Sait, Bishop of Milan)"
+        ],
+        "publishedDate": "2005",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8497150708"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788497150705"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 185,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uCzfAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uCzfAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=uCzfAAAACAAJ&dq=subject:mystery&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=uCzfAAAACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Explicaci%C3%B3n_del_s%C3%ADmbolo_los_sacramento.html?hl=&id=uCzfAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uCzfAAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ceMBYAAACAAJ",
+      "etag": "XfGlJ1BEyMM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ceMBYAAACAAJ",
+      "volumeInfo": {
+        "title": "La mansión de las mil puertas",
+        "authors": [
+          "Jordi Sierra i Fabra"
+        ],
+        "publisher": "Noguer Y Caralt Editores",
+        "publishedDate": "2010",
+        "description": "Tienes entre tus manos tres increíbles historias de terror: en La mansión de las mil puertas, dos gemelos llegan a una casa en ruinas, un laberinto en el que no se distinguen distancias ni barreras temporales; en Cambio de cerebro, un niño no puede dormir, ya que en su cerebro se han instalado unos pequeños seres que pretenden destruirle; y en ¡Máquinas!, Tomás sospecha que sus padres le ocultan algo terrorífico tanto a él como a su hermana. Tema: Brujas, monstruos y fantasmas Tratamiento: Misterio y terror Valores: Trabajo en equipo",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8408090747"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788408090748"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": [
+          "Comics & Graphic Novels"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "comicsContent": true,
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ceMBYAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ceMBYAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=ceMBYAAACAAJ&dq=subject:mystery&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=ceMBYAAACAAJ&dq=subject:mystery&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_mansi%C3%B3n_de_las_mil_puertas.html?hl=&id=ceMBYAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ceMBYAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 6,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "y-AvDwAAQBAJ",
+      "etag": "V3oGnwX2JRU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/y-AvDwAAQBAJ",
+      "volumeInfo": {
+        "title": "¡Mira, Una Medusa! (Look, a Jellyfish!)",
+        "authors": [
+          "Tessa Kenan"
+        ],
+        "publisher": "ediciones Lerner",
+        "publishedDate": "2017",
+        "description": "¿Sabías que las medusas pican a sus presas? Aprende más sobre las fascinantes criaturas que viven en cada océano de la Tierra. Las fotos frescas y vibrantes involucran a los lectores jóvenes mientras construyen las primeras habilidades de lectura de no ficción. Zap! Did you know that jellyfish sting their prey? Read on and learn more about the fascinating creatures that live in every ocean on Earth. In this Spanish-language edition, carefully leveled text and fresh, vibrant photos engage young readers as they build early nonfiction reading skills.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781512429442"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1512429449"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 28,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=y-AvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=y-AvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=y-AvDwAAQBAJ&printsec=frontcover&dq=subject:nonfiction&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=y-AvDwAAQBAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mira_Una_Medusa_Look_a_Jellyfish.html?hl=&id=y-AvDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Mira_Una_Medusa_Look_a_Jellyfish-sample-pdf.acsm?id=y-AvDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=y-AvDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "J_qmswEACAAJ",
+      "etag": "YSDvTuejfPs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/J_qmswEACAAJ",
+      "volumeInfo": {
+        "title": "Serpientes",
+        "subtitle": "Snakes",
+        "authors": [
+          "Darla Duhaime"
+        ],
+        "publisher": "Reptiles!",
+        "publishedDate": "2018",
+        "description": "\"¿Qué hace que un animal sea un reptil? ¿Su piel, su cola, su sonrisa? Las serpientes son reptiles. Averigua qué hace que estos animales sean un miembro especial de la familia de los reptiles. Los libros de Lectores preparados están diseñados para dar soporte a varios niveles de alfabetización para lectores preescolares y lectores emergentes, desde la capacidad de escuchar hasta la lectura independiente.\"--Back cover.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1641563230"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781641563239"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=J_qmswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=J_qmswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=J_qmswEACAAJ&dq=subject:nonfiction&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=J_qmswEACAAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Serpientes.html?hl=&id=J_qmswEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=J_qmswEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "RbaQzQEACAAJ",
+      "etag": "mWBn4KRlJRQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/RbaQzQEACAAJ",
+      "volumeInfo": {
+        "title": "Historia de los Estados Unidos",
+        "subtitle": "Una guía fascinante de la historia de América, que incluye eventos como la Revolución americana, la guerra franco-india, el Motín del té de Boston y Pearl Harbor",
+        "authors": [
+          "Captivating History"
+        ],
+        "publishedDate": "2020-05-11",
+        "description": "Cuando los primeros colonos llegaron a los Estados Unidos de América y comenzaron a buscarse la vida en aquel entorno natural, tan duro y poco familiar para gentes procedentes de Europa, jamás habrían podido soñar que, algún día, esa tierra que pisaban se convertiría en uno de los países más poderosos del mundo.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1647487080"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781647487089"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 130,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=RbaQzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=RbaQzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=RbaQzQEACAAJ&dq=subject:nonfiction&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=RbaQzQEACAAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Historia_de_los_Estados_Unidos.html?hl=&id=RbaQzQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=RbaQzQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "5GQ00AEACAAJ",
+      "etag": "tM+ANQ+ia+o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5GQ00AEACAAJ",
+      "volumeInfo": {
+        "title": "Ecoturismo",
+        "subtitle": "oferta y desarrollo sistémico regional",
+        "authors": [
+          "Luis Hernando Jiménez Bulla"
+        ],
+        "publishedDate": "2012",
+        "description": "Implementación del Plan de Manejo Ecoturístico (PME) -- Comité asesor para el plan de manejo del ecoturismo -- Nombramiento de un equipo transdisciplinario de profesionales -- Análisis de los actores de la comunidad -- Medición del éxito -- Anexos -- Anexo 1: FORMULARIO PARA INVENTARIO DE ATRACTIVOS ECOTURÍSTICOS -- Anexo 2: ENCUESTA PARA TURISTAS EXTRANJEROS -- Anexo 3: ENCUESTA PARA TURISTAS NACIONALES -- Anexo 4: ENCUESTA PARA LAS EMPRESAS PRESTADORAS DE SERVICIOS ECOTURÍSTICOS -- Anexo 5: FASE DE RECOLECCIÓN DE LA INFORMACIÓN DE CAMPO -- Bibliografía",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9586489981"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789586489980"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Management"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=5GQ00AEACAAJ&dq=subject:nonfiction&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=5GQ00AEACAAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Ecoturismo.html?hl=&id=5GQ00AEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=5GQ00AEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Ht4WnwEACAAJ",
+      "etag": "sGyQwT/R1us",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Ht4WnwEACAAJ",
+      "volumeInfo": {
+        "title": "Por Los Ojos de Mi Padre",
+        "authors": [
+          "Franklin Graham"
+        ],
+        "publishedDate": "2018-05",
+        "description": "Mientras que la mayoría de la gente conocía a Billy Graham como un evangelista mundial y como una leyenda viviente, Franklin Graham lo conocía de otro modo, como su papá. Este libro relata la notable vida de Billy no como la historia de un gigante espiritual, sino de la forma en que Franklin siempre lo ha visto: a través de los ojos de su padre.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0718014022"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780718014025"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Ht4WnwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Ht4WnwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=Ht4WnwEACAAJ&dq=subject:nonfiction&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=Ht4WnwEACAAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Por_Los_Ojos_de_Mi_Padre.html?hl=&id=Ht4WnwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Ht4WnwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "xnNBQwAACAAJ",
+      "etag": "qJ5BanrIwbY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/xnNBQwAACAAJ",
+      "volumeInfo": {
+        "title": "Formación cívica y ética 1",
+        "authors": [
+          "Mexico. Comisión Nacional de los Libros de Texto Gratuitos",
+          "Mexico. Secretaría de Educación Pública"
+        ],
+        "publishedDate": "2008",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9680117340"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789680117345"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": [
+          "Civics"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=xnNBQwAACAAJ&dq=subject:nonfiction&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=xnNBQwAACAAJ&dq=subject:nonfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Formaci%C3%B3n_c%C3%ADvica_y_%C3%A9tica_1.html?hl=&id=xnNBQwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=xnNBQwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

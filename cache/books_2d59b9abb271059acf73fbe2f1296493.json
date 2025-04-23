@@ -1,0 +1,257 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 4,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "LeTXnAAACAAJ",
+      "etag": "H54bHLYzCZM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/LeTXnAAACAAJ",
+      "volumeInfo": {
+        "title": "Fortunata y Jacinta",
+        "authors": [
+          "Benito Perez Galdos"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2017-01-22",
+        "description": "Fortunata y Jacinta",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1542686431"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781542686433"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 202,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=LeTXnAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=LeTXnAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=LeTXnAAACAAJ&dq=subject:classics&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=LeTXnAAACAAJ&dq=subject:classics&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fortunata_y_Jacinta.html?hl=&id=LeTXnAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=LeTXnAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GnEnSwAACAAJ",
+      "etag": "BksdKxKHSdM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GnEnSwAACAAJ",
+      "volumeInfo": {
+        "title": "Alicia en El Pais de Las Maravillas",
+        "authors": [
+          "Lewis Carroll"
+        ],
+        "publishedDate": "2004",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9700510735"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789700510736"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Children's stories"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.mx/books?id=GnEnSwAACAAJ&dq=subject:classics&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=GnEnSwAACAAJ&dq=subject:classics&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alicia_en_El_Pais_de_Las_Maravillas.html?hl=&id=GnEnSwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GnEnSwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "rz7svwEACAAJ",
+      "etag": "urcxVUYkoOc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/rz7svwEACAAJ",
+      "volumeInfo": {
+        "title": "La Cenicienta(Cinderella Picture Book)",
+        "authors": [
+          "Susanna Davidson"
+        ],
+        "publisher": "Usborne",
+        "publishedDate": "2019",
+        "description": "Un precioso libro ilustrado que da vida al clásico cuento de hadas por excelencia. Conoce a la Cenicienta, una joven que vive con su malvada madrastra, sus crueles hermanastras y una hada madrina que hará que sus sueños se hagan realidad. El texto sencillo y las ilustraciones modernas y llenas de colorido deleitarán a los pequeños, tanto si escuchan la historia como si la leen ellos mismos.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "079454620X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780794546205"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 24,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=rz7svwEACAAJ&dq=subject:classics&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=rz7svwEACAAJ&dq=subject:classics&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Cenicienta_Cinderella_Picture_Book.html?hl=&id=rz7svwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=rz7svwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3MaJrgEACAAJ",
+      "etag": "XdngWY7XS98",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3MaJrgEACAAJ",
+      "volumeInfo": {
+        "title": "El principito",
+        "authors": [
+          "Sara Torrico"
+        ],
+        "publishedDate": "2014",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8467739878"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788467739879"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 68,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=3MaJrgEACAAJ&dq=subject:classics&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=3MaJrgEACAAJ&dq=subject:classics&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_principito.html?hl=&id=3MaJrgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3MaJrgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

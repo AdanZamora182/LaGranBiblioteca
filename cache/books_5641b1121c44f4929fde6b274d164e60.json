@@ -1,0 +1,871 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 200,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "AgZUEAAAQBAJ",
+      "etag": "idjKjvh0t9M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AgZUEAAAQBAJ",
+      "volumeInfo": {
+        "title": "El Filibusterismo",
+        "authors": [
+          "J. Rizal"
+        ],
+        "publisher": "BoD – Books on Demand",
+        "publishedDate": "2021-12-08",
+        "description": "Reproducción del original",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783752491784"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3752491787"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 258,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AgZUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AgZUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=AgZUEAAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=AgZUEAAAQBAJ&dq=subject:fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Filibusterismo.html?hl=&id=AgZUEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_Filibusterismo-sample-pdf.acsm?id=AgZUEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AgZUEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "1Pg6XPwUjQoC",
+      "etag": "fbDPKaxC2bQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/1Pg6XPwUjQoC",
+      "volumeInfo": {
+        "title": "Corazon de perro",
+        "authors": [
+          "Mijail Bulgakov"
+        ],
+        "publisher": "LD Books",
+        "publishedDate": "2001-08",
+        "description": "Story of a stray dog that gains a human intelligence after a prominent professor transplants human glands into the unfortunate canine's body.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9685270449"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789685270441"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 200,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.3.5.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=1Pg6XPwUjQoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=1Pg6XPwUjQoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=1Pg6XPwUjQoC&printsec=frontcover&dq=subject:fiction&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=1Pg6XPwUjQoC&dq=subject:fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Corazon_de_perro.html?hl=&id=1Pg6XPwUjQoC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Corazon_de_perro-sample-pdf.acsm?id=1Pg6XPwUjQoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=1Pg6XPwUjQoC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "e6fvEAAAQBAJ",
+      "etag": "ECokFgNVHVI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/e6fvEAAAQBAJ",
+      "volumeInfo": {
+        "title": "El retrato de Dorian Gray",
+        "authors": [
+          "Oscar Wilde"
+        ],
+        "publisher": "epubli",
+        "publishedDate": "2024-01-21",
+        "description": "\"El retrato de Dorian Gray\" (original en inglés: \"The Picture of Dorian Gray\") es una novela escrita por el autor irlandés Oscar Wilde, publicada en el Lippincott's Monthly Magazine el 20 de junio de 1890. Posteriormente, Wilde revisaría la obra, haría varias modificaciones y agregaría nuevos capítulos. La versión modificada fue publicada por \"Ward, Lock, and Company\" en abril de 1891. \"Ward, Lock, and Company\" reeditó el libro en 1891 y nuevamente en 1895. Luego, Charles Carrington compró los derechos de la obra y la editó en 1901, 1905 y 1908. En 1908 y 1909, aparece una edición ilustrada por Paul Thiriat, Brendon & Son, Ltd. En 1913, 1916 y 1918, la novela es editada por Simkin, Marshall, Hamilton, Kent & Co., Ltd., con una nota bibliográfica sobre las ediciones citadas y una advertencia sobre la existencia de ediciones piratas que se caracterizaban por la ausencia del prefacio y por la \"mutilación de muchos pasajes\". \"El retrato de Dorian Gray\" es considerada una de las últimas obras clásicas de la novela de terror gótica con una fuerte temática faustiana, además muestra un pintor con afecto íntimo y directo con el personaje principal. El libro causó controversia cuando fue publicado por primera vez; sin embargo, es considerado en la actualidad como \"uno de los clásicos modernos de la literatura occidental.\"",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783758462665"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3758462665"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 300,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=e6fvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=e6fvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=e6fvEAAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=e6fvEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=e6fvEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 19,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 19,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=e6fvEAAAQBAJ&rdid=book-e6fvEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 19000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 19000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=e6fvEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-wgoEAAAQBAJ",
+      "etag": "6Xox8rxQIeM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-wgoEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Dubrosvsky",
+        "authors": [
+          "Aleksandr Pushkin"
+        ],
+        "publisher": "Greenbooks editore",
+        "publishedDate": "2021-04-06",
+        "description": "Dos terratenientes rusos son amigos desde sus antepasados. El mas rico se deja llevar por la avaricia y le quita la posesión al \" menos rico\" con argucias legales. El mas rico tiene una hija joven y guapa y su amigo un hijo dos años mayor que ella, 20 y 22 años respectivamente",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9791259713902"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 99,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-wgoEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-wgoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=-wgoEAAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=-wgoEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=-wgoEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 21,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 21,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=-wgoEAAAQBAJ&rdid=book--wgoEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 21000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 21000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=-wgoEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "1hkkEQAAQBAJ",
+      "etag": "6naRzzUyYcc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/1hkkEQAAQBAJ",
+      "volumeInfo": {
+        "title": "El Retrato de Dorian Gray (Traducido)",
+        "authors": [
+          "Oscar Wilde"
+        ],
+        "publisher": "David De Angelis",
+        "publishedDate": "2024-09-23",
+        "description": "El Retrato de Dorian Gray es una novela de Oscar Wilde, publicada por primera vez en 1890. Cuando su amigo Basil Hallward pinta el retrato de Dorian Gray, éste queda cautivado por su propia belleza y desea permanecer eternamente joven mientras el retrato envejece en su lugar. A medida que Dorian se entrega a una vida de excesos, se corrompe cada vez más, cometiendo diversos actos inmorales y llevando a otros a la ruina. Sin embargo, permanece físicamente impecable y joven, ya que sus pecados y su envejecimiento se transfieren mágicamente al retrato. Sin embargo, atormentado por su propia conciencia y por la grotesca transformación del retrato, Dorian se hunde en la paranoia y la culpa. Esconde el retrato en su desván, lejos de miradas indiscretas. Con el tiempo, el retrato se vuelve cada vez más grotesco, reflejando la corrupción interior de Dorian. La novela explora temas como la belleza, la moralidad y las consecuencias de los actos en una sociedad decadente.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9791223071472"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 215,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=1hkkEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=1hkkEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com.mx/books?id=1hkkEQAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=1hkkEQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=1hkkEQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 63,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 63,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=1hkkEQAAQBAJ&rdid=book-1hkkEQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 63000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 63000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_Retrato_de_Dorian_Gray_Traducido-sample-epub.acsm?id=1hkkEQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_Retrato_de_Dorian_Gray_Traducido-sample-pdf.acsm?id=1hkkEQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=1hkkEQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "f6BaAAAACAAJ",
+      "etag": "L9QnBqoK8zg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/f6BaAAAACAAJ",
+      "volumeInfo": {
+        "title": "Asi Hablaba Zaratustra = Zaratustra Speaks",
+        "authors": [
+          "Friedrich Wilhelm Nietzsche"
+        ],
+        "publisher": "Editorial Mexicanos",
+        "publishedDate": "2000-07-01",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9681501497"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789681501495"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 282,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=f6BaAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=f6BaAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=f6BaAAAACAAJ&dq=subject:fiction&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=f6BaAAAACAAJ&dq=subject:fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Asi_Hablaba_Zaratustra_Zaratustra_Speaks.html?hl=&id=f6BaAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=f6BaAAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uCqQDwAAQBAJ",
+      "etag": "UTSB8tP6G7s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uCqQDwAAQBAJ",
+      "volumeInfo": {
+        "title": "El Principito",
+        "authors": [
+          "De Saint-Exupéry, Antoine"
+        ],
+        "publisher": "Editorial Multimedia Educativa de S.A. de C.V.",
+        "publishedDate": "2019-04-04",
+        "description": "Antoine de Saint-Exupery, aviador y escritor francés, tuvo que exiliarse en Estados Unidos durante los años 1941 a 1943. Fue durante este periodo que escribió su obra más famosa: El Principito. En El Principito, de Saint-Exupery deja plasmada su crítica a una sociedad humana que ha perdido el rumbo y, en contraste, presenta a un niño que simboliza la visión infantil desde la que se observa el sinsentido del mundo adulto.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786078476732"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6078476734"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 104,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.4.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uCqQDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uCqQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=uCqQDwAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=uCqQDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=uCqQDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 20,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 20,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=uCqQDwAAQBAJ&rdid=book-uCqQDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 20000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 20000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_Principito-sample-epub.acsm?id=uCqQDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_Principito-sample-pdf.acsm?id=uCqQDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uCqQDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "rqrBEAAAQBAJ",
+      "etag": "wmwUTq5XLH4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/rqrBEAAAQBAJ",
+      "volumeInfo": {
+        "title": "EL RETRATO DE DORIAN GRAY",
+        "subtitle": "Oscar Wilde",
+        "authors": [
+          "Oscar Wilde"
+        ],
+        "publisher": "Lebooks Editora",
+        "publishedDate": "2023-05-30",
+        "description": "Oscar Wilde, uno de los escritores más influyentes del siglo XIX, dejó una marca duradera en la literatura y el pensamiento contemporáneo. Sus obras exploran temas como la moralidad, la belleza, el amor y la hipocresía de la sociedad victoriana y su agudo ingenio y habilidad para crear diálogos brillantes le valieron un lugar destacado en la literatura británica. Entre sus obras más conocidas se encuentran El Retrato de Dorian Gray, una novela que desafía los límites de la moralidad y la belleza. \" El retrato de Dorian Gray\" nos transporta a la alta sociedad londinense del siglo XIX y nos sumerge en una historia llena de oscuros secretos y dilemas morales. La trama gira en torno a Dorian Gray, un joven apuesto y seductor que cautiva a todos con su belleza y encanto. Pero hay un elemento único en su vida... \"El retrato de Dorian Gray\" dejó una huella imborrable en la literatura universal y ha sido objeto de numerosos análisis y estudios. Déjate llevar por su intriga, su belleza y su inquietante exploración de la dualidad humana. Descubre por qué esta obra maestra de Oscar Wilde sigue siendo relevante y cautivadora, y continúa inspirando a escritores y lectores en todo el mundo.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786558944591"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6558944596"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 328,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=rqrBEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=rqrBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=rqrBEAAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=rqrBEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=rqrBEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 45,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 45,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=rqrBEAAAQBAJ&rdid=book-rqrBEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 45000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 45000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/EL_RETRATO_DE_DORIAN_GRAY-sample-epub.acsm?id=rqrBEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/EL_RETRATO_DE_DORIAN_GRAY-sample-pdf.acsm?id=rqrBEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=rqrBEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "lRxxDgAAQBAJ",
+      "etag": "HX5NQOSOB3g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/lRxxDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Orgullo y Prejuicio – Pride and Prejudice",
+        "authors": [
+          "Jane Austen"
+        ],
+        "publisher": "PLUTÓN EDICIONES X SL",
+        "publishedDate": "2017-03-22",
+        "description": "Novela de la inglesa Jane Austen (1775–1817) publicada en 1817 y pionera en su género. En ella se combina con gran maestría la pincelada realista y costumbrista y la sátira poética y sentimental de la Inglaterra de principios del siglo XIX. Esta historia inmortal puso a su autora un lugar destacado en la novelística de todos los tiempos. p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.1px Verdana}",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788494637315"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8494637312"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 641,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=lRxxDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=lRxxDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=lRxxDgAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=lRxxDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=lRxxDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 85.86,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 85.86,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=lRxxDgAAQBAJ&rdid=book-lRxxDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 85860000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 85860000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Orgullo_y_Prejuicio_Pride_and_Prejudice-sample-pdf.acsm?id=lRxxDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=lRxxDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vqJjDwAAQBAJ",
+      "etag": "9GO3S3QTKMA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vqJjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "El signo de los cuatro",
+        "subtitle": "texto completo, con índice activo",
+        "authors": [
+          "Arthur Conan Doyle"
+        ],
+        "publisher": "e-artnow",
+        "publishedDate": "2013-11-27",
+        "description": "Este ebook presenta \"El signo de los cuatro \", con un sumario din©Łmico y detallado. El signo de los cuatro es la segunda novela protagonizada por Sherlock Holmes, escrita por Sir Arthur Conan Doyle. Se trata (junto a Estudio en escarlata, El sabueso de los Baskerville y El valle del terror) de una de las cuatro ©ðnicas novelas que Arthur Conan Doyle escribi©đ con Holmes como protagonista, ya que el resto de sus obras acerca de este personaje son relatos cortos. La petici©đn de una mujer a Sherlock Holmes para acompa©łarla a visitar a un hombre y la muerte del hermano del mismo, lo lleva descubrir, junto al Dr. Watson, el secreto que hay tras un tesoro encontrado en la India, un juramento entre tres indios, un blanco y una enloquecedora sed de venganza. Sir Arthur Ignatius Conan Doyle (1859 - 1930) fue un m©♭dico y escritor escoc©♭s, creador del c©♭lebre detective de ficci©đn Sherlock Holmes. Fue un autor prol©Ưfico cuya obra incluye relatos de ciencia ficci©đn, novela hist©đrica, teatro y poes©Ưa.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788026803522"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8026803523"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 144,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vqJjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vqJjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=vqJjDwAAQBAJ&printsec=frontcover&dq=subject:fiction&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=vqJjDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=vqJjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 39.67,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 39.67,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=vqJjDwAAQBAJ&rdid=book-vqJjDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 39670000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 39670000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_signo_de_los_cuatro-sample-epub.acsm?id=vqJjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/El_signo_de_los_cuatro-sample-pdf.acsm?id=vqJjDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vqJjDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

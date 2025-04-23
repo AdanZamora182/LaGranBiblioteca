@@ -1,0 +1,707 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 200,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "am3K9y_2_r8C",
+      "etag": "uKx7I9wqML0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/am3K9y_2_r8C",
+      "volumeInfo": {
+        "title": "De la tierra a la luna",
+        "authors": [
+          "Julio Verne"
+        ],
+        "publisher": "EDAF",
+        "publishedDate": "2005-05",
+        "description": "Los Viajes extraordinarios de Verne aspiraban a convertirse en una ambiciosa epopeya, cuya definición más precisa dio el propio autor: «Un paseo completo por el cosmos de un hombre del siglo XIX». Tras este objetivo, Verne exploraría la tierra y sus profundidades, el mar y el aire, con historias tan memorables como la del Nautilus y su capitán Nemo. De la Tierra a la Luna, que pertenece a la época idílica de su fe en la ciencia, narra con notables dosis de humor e ironía la preparación y envío a la Luna de un gigantesco proyectil. Y no se sabe qué admirar más en la novela: si el divertido desarrollo de la historia, o la sorprendente exactitud de la mayoría de sus previsiones.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8441415269"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788441415263"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 270,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "5.3.6.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=am3K9y_2_r8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=am3K9y_2_r8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=am3K9y_2_r8C&printsec=frontcover&dq=subject:science%2Bfiction&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=am3K9y_2_r8C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=am3K9y_2_r8C"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 65,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 65,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=am3K9y_2_r8C&rdid=book-am3K9y_2_r8C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 65000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 65000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/De_la_tierra_a_la_luna-sample-pdf.acsm?id=am3K9y_2_r8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=am3K9y_2_r8C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QfzJjwEACAAJ",
+      "etag": "1kj92ZZyGqU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QfzJjwEACAAJ",
+      "volumeInfo": {
+        "title": "El principito",
+        "publishedDate": "2016",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6078398857"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786078398850"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 94,
+        "printType": "BOOK",
+        "categories": [
+          "Deserts"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=QfzJjwEACAAJ&dq=subject:science%2Bfiction&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=QfzJjwEACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_principito.html?hl=&id=QfzJjwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QfzJjwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fLcBe3tXop4C",
+      "etag": "RlgBTgVjPcs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fLcBe3tXop4C",
+      "volumeInfo": {
+        "title": "Alrededor de la luna",
+        "authors": [
+          "Jules Verne"
+        ],
+        "publisher": "EDAF",
+        "publishedDate": "2007-12-12",
+        "description": "Este viaje Alrededor de la Luna, continuación del relato titulado De la Tierra a la Luna, es la prolongación novelada del Verne que sabe combinar, con el artificio del narrador vigoroso, los mitos lunares imaginados por el hombre desde los inicios de la humanidad con los conocimientos científicos del siglo XIX.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8441415277"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788441415270"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 266,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.3.6.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fLcBe3tXop4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fLcBe3tXop4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=fLcBe3tXop4C&printsec=frontcover&dq=subject:science%2Bfiction&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=fLcBe3tXop4C&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alrededor_de_la_luna.html?hl=&id=fLcBe3tXop4C"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Alrededor_de_la_luna-sample-pdf.acsm?id=fLcBe3tXop4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fLcBe3tXop4C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "5xPYAAAAMAAJ",
+      "etag": "j9JFR3pTu4w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5xPYAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Una arruga en el tiempo",
+        "authors": [
+          "Madeleine L'Engle"
+        ],
+        "publishedDate": "2000",
+        "description": "Meg y su familia reciben la visita de una extraña persona, que viene de otra dimensión del tiempo.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000058197035"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 216,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=5xPYAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=5xPYAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=5xPYAAAAMAAJ&dq=subject:science%2Bfiction&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=5xPYAAAAMAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Una_arruga_en_el_tiempo.html?hl=&id=5xPYAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=5xPYAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dk5gvgEACAAJ",
+      "etag": "qZwjrpDmcFI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dk5gvgEACAAJ",
+      "volumeInfo": {
+        "title": "De La Tierra A La Luna/From The Earth To The Moon",
+        "authors": [
+          "Jules Verne"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2015-02-26",
+        "description": "Publicada en 1865, esta obra clave en la bibliografía de Julio Verne, introduce al lector en el mundo de la pasión y la admiración por la ciencia. Es una de sus novelas más conocidas y también es un ejemplo típico del tejido de fantasía y conocimientos que convirtieron a Verne en el fundador de una ciencia-ficción que la realidad se encargó de confirmar en gran parte.Tras el término de la Guerra de Secesión, varios miembros del Gun-Club (dedicado a la confección de armas de guerra) se encuentran sin trabajo y se ponen manos a la obra con la construcción del mayor cañón del mundo jamás creado.Pero también quieren apuntar a la Luna, destruirla, por supuesto, y conseguir así la popularidad y disfrutar de la gloria de ser los padres del ingenio.It has been some time since the end of the American Civil War. The Gun Club, a society based in Baltimore and dedicated to the design of weapons of all kinds (especially cannons), meets when Impey Barbicane, its president, calls them to support his idea: according to his calculations, a cannon can shoot a projectile so that it reaches the moon. After receiving the whole support of his companions, a few of them meet to decide the place from where the projectile will be shot, the dimensions and makings of both the cannon and the projectile, and which kind of powder are they to use.An old enemy of Barbicane, a Captain Nicholl of Philadelphia, designer of plate armor, declares that the enterprise is absurd and makes a series of bets with Barbicane, each of them of increasing amount over the impossibility of such feat.The first obstacle, the money, and over which Nicholl has bet 1000 dollars, is raised from most countries in America and Europe, in which the mission reaches variable success (while the USA gives 4 million dollars, England does not give a farthing, being envious of the United States in matters of science), but in the end nearly five and a half million dollars are raised, which ensures the financial feasibility of the project.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1508643555"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781508643555"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 400,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dk5gvgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dk5gvgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=dk5gvgEACAAJ&dq=subject:science%2Bfiction&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=dk5gvgEACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/De_La_Tierra_A_La_Luna_From_The_Earth_To.html?hl=&id=dk5gvgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dk5gvgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Lxl8SQAACAAJ",
+      "etag": "khgo2IZawHA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Lxl8SQAACAAJ",
+      "volumeInfo": {
+        "title": "Mil novecientos ochenta y cuatro",
+        "authors": [
+          "George Orwell"
+        ],
+        "publishedDate": "1999",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9686941525"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789686941524"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "London (England)"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=Lxl8SQAACAAJ&dq=subject:science%2Bfiction&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=Lxl8SQAACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mil_novecientos_ochenta_y_cuatro.html?hl=&id=Lxl8SQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Lxl8SQAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Z5SZPwAACAAJ",
+      "etag": "UcKSxAmVECo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Z5SZPwAACAAJ",
+      "volumeInfo": {
+        "title": "Fahrenheit 451",
+        "authors": [
+          "Ray Bradbury"
+        ],
+        "publisher": "DEBOLSILLO",
+        "publishedDate": "2004",
+        "description": "A fantasy of a society in which all books must by burned.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8497930053"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788497930055"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 176,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Z5SZPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Z5SZPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=Z5SZPwAACAAJ&dq=subject:science%2Bfiction&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=Z5SZPwAACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fahrenheit_451.html?hl=&id=Z5SZPwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Z5SZPwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "PVHljwEACAAJ",
+      "etag": "Ta9jEZ7EDGM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/PVHljwEACAAJ",
+      "volumeInfo": {
+        "title": "Alrededor De La Luna",
+        "authors": [
+          "Julio Verne"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2016-05-04",
+        "description": "Este viaje Alrededor de la Luna, continuación del relato titulado De la Tierra a la Luna. Mientras en De la Tierra a la Luna Verne se dedica a explicar minuciosamente cómo unos emprendedores planean y ejecutan todos los preparativos para un viaje hacia la Luna en una bala de cañón, en Alrededor de la Luna describe el transcurso de ese viaje.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "153308095X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781533080950"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 162,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PVHljwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PVHljwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=PVHljwEACAAJ&dq=subject:science%2Bfiction&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=PVHljwEACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alrededor_De_La_Luna.html?hl=&id=PVHljwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PVHljwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DzHAJo5BWUAC",
+      "etag": "DffAioRk9Bo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DzHAJo5BWUAC",
+      "volumeInfo": {
+        "title": "La Guerra de los Mundos",
+        "authors": [
+          "H. G. Wells",
+          "Davis Worth Miller"
+        ],
+        "publisher": "Capstone",
+        "publishedDate": "2010-09",
+        "description": "A finales del siglo XIX, un extraño meteorito se estrella cerca de Londres, Inglaterra. Cuando George y otros residentes del pueblo investigan, descubren un enorme cilindro alienígena. De pronto, un marciano activa una malvada máquina que comienza a destruir todo a su paso. Ahora, George debe encontrar una forma de sobrevivir la Guerra de los Mundos.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781434223227"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1434223221"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 73,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.2.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DzHAJo5BWUAC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DzHAJo5BWUAC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=DzHAJo5BWUAC&dq=subject:science%2Bfiction&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=DzHAJo5BWUAC&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Guerra_de_los_Mundos.html?hl=&id=DzHAJo5BWUAC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DzHAJo5BWUAC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bbm-SAAACAAJ",
+      "etag": "s8aGt2RUKe0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bbm-SAAACAAJ",
+      "volumeInfo": {
+        "title": "Viaje Al Centro de la Tierra",
+        "authors": [
+          "Jules Verne"
+        ],
+        "publisher": "Turtleback",
+        "publishedDate": "2004-04-30",
+        "description": "A team of explorers makes an expedition into a crater in Iceland which leads to the center of the earth and to incredible and horrifying discoveries.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "060630424X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780606304245"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 48,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bbm-SAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bbm-SAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=bbm-SAAACAAJ&dq=subject:science%2Bfiction&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=bbm-SAAACAAJ&dq=subject:science%2Bfiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Viaje_Al_Centro_de_la_Tierra.html?hl=&id=bbm-SAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bbm-SAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

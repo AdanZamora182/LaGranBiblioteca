@@ -1,0 +1,695 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 200,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "ZwTHCHcDq8kC",
+      "etag": "5M2rYNXNaZk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZwTHCHcDq8kC",
+      "volumeInfo": {
+        "title": "Donde Viven los Monstruos",
+        "authors": [
+          "Maurice Sendak"
+        ],
+        "publishedDate": "1963",
+        "description": "A naughty little boy, sent to bed without his supper, sails to the land of the wild things where he becomes their king.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0439052130"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780439052139"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 52,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZwTHCHcDq8kC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZwTHCHcDq8kC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=ZwTHCHcDq8kC&dq=subject:fantasy&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=ZwTHCHcDq8kC&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Donde_Viven_los_Monstruos.html?hl=&id=ZwTHCHcDq8kC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZwTHCHcDq8kC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yuYsxQEACAAJ",
+      "etag": "pH/TIYK2c+w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yuYsxQEACAAJ",
+      "volumeInfo": {
+        "title": "Alicia en el país de las maravillas",
+        "subtitle": "Alicia a través del espejo",
+        "authors": [
+          "Lewis Carroll"
+        ],
+        "publishedDate": "2015",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6071420210"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786071420213"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 288,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=yuYsxQEACAAJ&dq=subject:fantasy&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=yuYsxQEACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alicia_en_el_pa%C3%ADs_de_las_maravillas.html?hl=&id=yuYsxQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yuYsxQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "HNKobwAACAAJ",
+      "etag": "ohe7KG72TvE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/HNKobwAACAAJ",
+      "volumeInfo": {
+        "title": "El principito",
+        "authors": [
+          "Antoine de Saint-Exupéry"
+        ],
+        "publisher": "Editores Mexicanos Unidos-Mex",
+        "publishedDate": "1985",
+        "description": "El libro cuenta la historia de un pequeño piloto que estrella el aeroplano en que viajaba en el desierto de Sahara. Aquí conoce a un pequeño príncipe proveniente de otro planeta, en el cual sólo hay algunos volcanes y crece una flor. El principito le cuenta al piloto, que ha visitado muchos asteroides lejanos intentando aprender cómo cuidar su planeta e impedir que se rompa en pedazos. El viaje del principito no tiene resultados positivos hasta que llega a la tierra, lugar en el cual aprende: el valor de la amistad, acerca del amor, de la responsabilidad y de la belleza. Esta obra clásica e intemporal, aplaudida por los críticos y lectores por su pureza y belleza de expresión, presenta un nuevo formato, más alegre, con ilustraciones realizadas por el autor que han sido restauradas y remasterizadas en los vibrantes colores originales.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9681500830"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789681500832"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 99,
+        "printType": "BOOK",
+        "categories": [
+          "Foreign Language Study"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=HNKobwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=HNKobwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=HNKobwAACAAJ&dq=subject:fantasy&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=HNKobwAACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_principito.html?hl=&id=HNKobwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=HNKobwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "KZjY_nddixEC",
+      "etag": "/DV+955/ALQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/KZjY_nddixEC",
+      "volumeInfo": {
+        "title": "Las Cronicas de Narnia",
+        "authors": [
+          "C. S. Lewis"
+        ],
+        "publisher": "Harper Collins",
+        "publishedDate": "2006-11-07",
+        "description": "Viajes al fin del mundo, criaturas fantásticas y batallas épicas entre el bien y el mal—El León, la Bruja y el Ropero es un libro que lo contiene todo—y fue escrito en 1949 por C. S. Lewis. Sin embargo, Lewis no acabó ahí. Seis libros más siguieron, y juntos se dieron a conocer como Las Crónicas de Narnia. Durante más de cincuenta años, Las Crónicas de Narnia han transcendido el género de la fantasía, formando parte del canon de la literatura clásica. Cada uno de los siete libros es una obra maestra, que sumerge a los lectores en un terreno donde la magia es realidad, y el resultado es un mundo ficticio cuyo ámbito ha fascinado a generaciones. Esta edición presenta los siete libros en un volumen impresionante.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780061199004"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0061199001"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 818,
+        "printType": "BOOK",
+        "categories": [
+          "Children"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 31,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=KZjY_nddixEC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=KZjY_nddixEC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=KZjY_nddixEC&dq=subject:fantasy&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=KZjY_nddixEC&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Las_Cronicas_de_Narnia.html?hl=&id=KZjY_nddixEC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=KZjY_nddixEC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Jc0lW0r0j58C",
+      "etag": "7TQruplyUec",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Jc0lW0r0j58C",
+      "volumeInfo": {
+        "title": "El Principe Caspian",
+        "authors": [
+          "C. S. Lewis"
+        ],
+        "publisher": "Zondervan",
+        "publishedDate": "2005-10-18",
+        "description": "Un Príncipe Lucha Por Su Corona Narnia... donde los animales hablan... donde los árboles caminan... donde una batalla está a punto de comenzar. Un príncipe pierde su derecho al trono y decide juntar un ejército para liberar su tierras de un rey impostor. Pero en últimas, será una batalla de honor entre los dos hombres, la que terminará decidiendo el destino del mundo entero.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780060884284"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0060884282"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 290,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Jc0lW0r0j58C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Jc0lW0r0j58C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=Jc0lW0r0j58C&dq=subject:fantasy&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=Jc0lW0r0j58C&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Principe_Caspian.html?hl=&id=Jc0lW0r0j58C"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Jc0lW0r0j58C&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IDRLGgAACAAJ",
+      "etag": "Sb24kqqY1BQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IDRLGgAACAAJ",
+      "volumeInfo": {
+        "title": "Alicia en El País de Las Maravillas",
+        "authors": [
+          "Lewis Carroll"
+        ],
+        "publisher": "Edimat",
+        "publishedDate": "2007-10",
+        "description": "Una niña llamada Alicia sigue al Conejo Blanco por una puerta muy chiquita, descubre el País de Las Maravillas y pasa por aventuras muy inusuales.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8497862627"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788497862622"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=IDRLGgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=IDRLGgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=IDRLGgAACAAJ&dq=subject:fantasy&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=IDRLGgAACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Alicia_en_El_Pa%C3%ADs_de_Las_Maravillas.html?hl=&id=IDRLGgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IDRLGgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "0VfhAAAAMAAJ",
+      "etag": "iWdwKKeFIb4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/0VfhAAAAMAAJ",
+      "volumeInfo": {
+        "title": "El gato ensombrerado",
+        "subtitle": "",
+        "authors": [
+          "Dr. Seuss"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "1967",
+        "description": "Translated by Carlos Rivera.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015010460577"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 72,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.4.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=0VfhAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=0VfhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=0VfhAAAAMAAJ&dq=subject:fantasy&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=0VfhAAAAMAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_gato_ensombrerado.html?hl=&id=0VfhAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=0VfhAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IOh0zwEACAAJ",
+      "etag": "8zwKco9YGX4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IOh0zwEACAAJ",
+      "volumeInfo": {
+        "title": "El Principito (Ed. Extragrande) / The Little Prince (Extra-Large Edition)",
+        "authors": [
+          "Antoine de Saint-Exupéry"
+        ],
+        "publisher": "Salamandra Infantil Y Juvenil",
+        "publishedDate": "2023-03-22",
+        "description": "Esta lujosa edición de El Principito cautivará a los amantes de este entrañable clásico con su impresionante gran formato y preciosos acabados como cantos de color, tapa dura y detalles dorados. Las delicadas ilustraciones de Saint-Exupéry lucen más bellas que nunca en este formato extragrande que cautivará a coleccionistas y nuevos lectores por igual. Un regalo ideal para estas navidades. Viví así, solo, sin nadie con quien hablar verdaderamente, hasta que tuve una avería en el desierto del Sahara, hace seis años. Algo se había roto en mi motor. Y como no tenía conmigo ni mecánico ni pasajeros, me dispuse a realizar, solo, una reparación difícil. Era, para mí, cuestión de vida o muerte. Tenía agua apenas para ocho días. La primera noche dormí sobre la arena a mil millas de toda tierra habitada. Estaba más aislado que un náufrago sobre una balsa en medio del océano. Imaginaos, pues, mi sorpresa cuando, al romper el día, me despertó una extraña vocecita que decía: -Por favor..., ¡dibújame un cordero! -¿Eh!? -Dibújame un cordero... Una fábula mítica y relato filosófico que interroga acerca de la relación del ser humano con su prójimo y el mundo. ENGLISH DESCRIPTION This luxurious edition of The Little Prince will captivate lovers of this endearing classic with its impressive large format and precious finishes such as colored edges, hard cover, and golden details. Saint-Exupéry's delicate illustrations look more beautiful than ever in this extra-large format that will captivate collectors and new readers alike. An ideal gift for this Christmas. I lived like this, alone, with no one to truly talk to, until I had a breakdown in the Sahara Desert six years ago. Something had broken in my engine. And since I had neither a mechanic nor passengers with me, I set out to make the difficult repair alone. It was, for me, a matter of life and death. I had water for only eight days. The first night I slept on the sand a thousand miles from any inhabited land. I was more isolated than a castaway on a raft in the middle of the ocean. Imagine, then, my surprise when, at daybreak, a strange little voice woke me up that said: -Please... draw me a lamb! -Huh!? -Draw me a lamb...\" A mythical fable and philosophical story that questions the relationship of the human being with his neighbor and the world.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8418797452"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788418797453"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=IOh0zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=IOh0zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=IOh0zwEACAAJ&dq=subject:fantasy&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=IOh0zwEACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Principito_Ed_Extragrande_The_Little.html?hl=&id=IOh0zwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IOh0zwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "e5DUswEACAAJ",
+      "etag": "6yJ7oTHFr/c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/e5DUswEACAAJ",
+      "volumeInfo": {
+        "title": "El Maravilloso Mago de Oz",
+        "authors": [
+          "L. Frank Baum"
+        ],
+        "publisher": "Editorial Tomo",
+        "publishedDate": "2018-04",
+        "description": "Arrastrada por un ciclón hacia la mágica Tierra de Oz, la pequeña Dorothy debe seguir el camino amarillo que conduce a la Ciudad Esmeralda y pedirle ayuda al Gran y Terrible Mago de Oz. Al lado del Espantapájaros, el Hombre de Hojalata y el Léon Cobarde, Dorothy debe vencer a la Bruja Mala del Oeste, pero ¿la magia del Mago será suficiente para ayudar a que la niña vuelva a casa?",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6074158029"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786074158021"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 235,
+        "printType": "BOOK",
+        "categories": [
+          "Family & Relationships"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=e5DUswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=e5DUswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=e5DUswEACAAJ&dq=subject:fantasy&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=e5DUswEACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Maravilloso_Mago_de_Oz.html?hl=&id=e5DUswEACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=e5DUswEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "1BiAAQAACAAJ",
+      "etag": "AevMtD3srWc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/1BiAAQAACAAJ",
+      "volumeInfo": {
+        "title": "El Hobbit (Mti)",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publisher": "Planeta Publishing",
+        "publishedDate": "2017-12-12",
+        "description": "Smaug parec�a profundamente dormido cuando Bilbo espi� una vez m�s desde la entrada. Pero fing�a. Estaba vigilando la entrada del t�nel... Sacado de su c�modo agujero-hobbit por Gandalf y una banda de enanos, Bilbo se encuentra de pronto en medio de una conspiraci�n que pretende apoderarse del tesoro de Smaug el Magn�fico, un enorme y muy peligroso drag�n...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6070724143"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786070724145"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 288,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=1BiAAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=1BiAAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=1BiAAQAACAAJ&dq=subject:fantasy&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=1BiAAQAACAAJ&dq=subject:fantasy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_Hobbit_Mti.html?hl=&id=1BiAAQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=1BiAAQAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
