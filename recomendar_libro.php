@@ -11,6 +11,8 @@ require_once 'config.php'; // Conexión a la base de datos
 
 // Obtener datos del usuario desde POST
 $input = json_decode(file_get_contents("php://input"), true);
+
+// Manejar el caso en el que no se envían datos (por ejemplo, al acceder desde el navegador)
 if (!$input) {
     echo json_encode(["error" => "No se recibieron datos válidos."]);
     exit();
@@ -39,8 +41,8 @@ while ($row = $result->fetch_assoc()) {
     $sumaCoincidencia = 0;
 
     foreach ($caracteristicas as $caract) {
-        $usuario = floatval($input[$caract]);
-        $libro = floatval($row[$caract]);
+        $usuario = isset($input[$caract]) ? floatval($input[$caract]) : 0;
+        $libro = isset($row[$caract]) ? floatval($row[$caract]) : 0;
         $sumaCoincidencia += min($usuario, $libro);
     }
 
@@ -64,4 +66,4 @@ if (!empty($mejoresLibros)) {
 }
 
 $conn->close();
-?> 
+?>
