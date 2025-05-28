@@ -14,7 +14,7 @@
  */
 
 function getBooksByTitle($title) {
-    $apiKey = 'AIzaSyB61jFnP10W54puOxeuTfDlGyQpf2Pfr_8'; // Clave de la API de Google Books 
+    $apiKey = 'AIzaSyCzQE7O9KMS_5H5DIVoLWs-B33jLY3to8Q'; // Clave de la API de Google Books 
     $url = "https://www.googleapis.com/books/v1/volumes?q=" . urlencode($title) . "&key=" . $apiKey; // URL de la API
 
     // Realiza la solicitud a la API
