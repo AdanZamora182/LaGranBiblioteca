@@ -142,7 +142,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .footer p {
             margin: 0;
         }
+
+        .active-eye {
+            color: #007bff !important; /* Azul Bootstrap cuando está activo */
+        }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -159,7 +164,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="email" id="email" name="email" required>
                 
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" required>
+                <div style="position: relative; margin-bottom: 20px;">
+                    <input type="password" id="contraseña" name="contraseña" class="form-control" required style="padding-right: 40px; width: 100%;">
+                    <button type="button" id="eye-btn" tabindex="-1"
+                        style="position: absolute; right: 2px; top: 50%; transform: translateY(-50%);
+                               background: transparent; border: none; padding: 0;
+                               width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-eye" id="eye-icon" style="font-size: 1.3em; color: #888; transition: color 0.2s;"></i>
+                    </button>
+                </div>
                 
                 <input type="submit" value="Iniciar Sesión">
             </form>
@@ -184,5 +197,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Efecto visual al hacer clic en el botón del ojo
+        document.addEventListener('DOMContentLoaded', function() {
+            var eyeBtn = document.getElementById('eye-btn');
+            var eyeIcon = document.getElementById('eye-icon');
+            eyeBtn.addEventListener('click', function() {
+                eyeIcon.classList.toggle('active-eye');
+            });
+        });
+    </script>
 </body>
 </html>

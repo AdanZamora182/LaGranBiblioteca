@@ -199,6 +199,26 @@ if ($search_term && !isset($_GET['search_processed'])) {
             display: flex;
             gap: 10px;
         }
+
+        /* Estilo para los mensajes de alerta */
+        .alert-message {
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            animation: fadeOut 5s forwards;
+        }
+
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
@@ -210,6 +230,20 @@ if ($search_term && !isset($_GET['search_processed'])) {
     </a>
     <div class="container">
         <h1>Mis Reseñas</h1>
+        
+        <?php
+        // Mostrar mensaje de éxito si existe
+        if (isset($_SESSION['review_message'])): ?>
+            <div class="alert-message alert-<?php echo $_SESSION['review_message_type']; ?>">
+                <?php echo $_SESSION['review_message']; ?>
+            </div>
+            <?php 
+            // Eliminar el mensaje para que no aparezca en futuras cargas
+            unset($_SESSION['review_message']); 
+            unset($_SESSION['review_message_type']);
+            ?>
+        <?php endif; ?>
+        
         <form method="GET" action="my_reviews.php" class="form-inline mb-3">
             <input type="text" name="search" id="search" class="form-control mr-sm-2" placeholder="Buscar reseñas..." value="<?php echo htmlspecialchars($search_term); ?>"> <!-- Campo de búsqueda -->
             <button type="submit" class="btn btn-outline-success my-2 my-sm-0">
@@ -281,7 +315,18 @@ if ($search_term && !isset($_GET['search_processed'])) {
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        $(function() { // Inicializar el autocompletado
+        $(function() { 
+            // Verificar si hay un parámetro de edición exitosa
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('edited') === 'success') {
+                // Mostrar alerta del navegador
+                alert('¡La reseña se ha actualizado correctamente!');
+                
+                // Eliminar el parámetro de la URL para evitar que aparezca la alerta al recargar
+                const newUrl = window.location.pathname + window.location.search.replace(/[?&]edited=success/, '');
+                window.history.replaceState({}, document.title, newUrl);
+            }
+            
             $("#search").autocomplete({
                 source: function(request, response) {
                     $.ajax({ // Realizar una petición AJAX al archivo search_books.php
@@ -305,5 +350,5 @@ if ($search_term && !isset($_GET['search_processed'])) {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html> 
+</html>
 

@@ -134,7 +134,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .footer p {
             margin: 0;
         }
+
+        .active-eye {
+            color: #007bff !important; /* Azul Bootstrap cuando está activo */
+        }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -155,7 +160,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="email" id="email" name="email" required>
                 
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" required>
+                <div style="position: relative; margin-bottom: 15px;">
+                    <input type="password" id="contraseña" name="contraseña" required style="padding-right: 40px; width: 100%;">
+                    <button type="button" id="eye-btn" tabindex="-1"
+                        style="position: absolute; right: 8px; top: 38%; transform: translateY(-50%);
+                               background: transparent; border: none; outline: none;
+                               width: 24px; height: 24px; line-height: 1; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-eye" id="eye-icon" style="font-size: 1.2em; color: #888; transition: color 0.2s; display: block; margin: 0;"></i>
+                    </button>
+                </div>
+                
+                <!-- Nuevo campo para verificar contraseña (no funcional) -->
+                <label for="verificar_contraseña">Verificar Contraseña:</label>
+                <div style="position: relative; margin-bottom: 15px;">
+                    <input type="password" id="verificar_contraseña" name="verificar_contraseña" style="padding-right: 40px; width: 100%;">
+                    <button type="button" id="eye-btn-verify" tabindex="-1"
+                        style="position: absolute; right: 8px; top: 38%; transform: translateY(-50%);
+                               background: transparent; border: none; outline: none;
+                               width: 24px; height: 24px; line-height: 1; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-eye" id="eye-icon-verify" style="font-size: 1.2em; color: #888; transition: color 0.2s; display: block; margin: 0;"></i>
+                    </button>
+                </div>
                 
                 <input type="submit" value="Registrar">
             </form>
@@ -172,5 +197,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Funcionalidad para mostrar/ocultar contraseña
+        document.addEventListener('DOMContentLoaded', function() {
+            // Código para el primer campo de contraseña
+            var eyeBtn = document.getElementById('eye-btn');
+            var eyeIcon = document.getElementById('eye-icon');
+            var passwordInput = document.getElementById('contraseña');
+            
+            eyeBtn.addEventListener('click', function() {
+                // Toggle la clase para cambiar el color
+                eyeIcon.classList.toggle('active-eye');
+                
+                // Toggle el tipo de input entre password y text
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    eyeIcon.classList.replace('bi-eye', 'bi-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    eyeIcon.classList.replace('bi-eye-slash', 'bi-eye');
+                }
+            });
+            
+            // Código para el campo de verificación de contraseña
+            var eyeBtnVerify = document.getElementById('eye-btn-verify');
+            var eyeIconVerify = document.getElementById('eye-icon-verify');
+            var verifyPasswordInput = document.getElementById('verificar_contraseña');
+            
+            eyeBtnVerify.addEventListener('click', function() {
+                // Toggle la clase para cambiar el color
+                eyeIconVerify.classList.toggle('active-eye');
+                
+                // Toggle el tipo de input entre password y text
+                if (verifyPasswordInput.type === 'password') {
+                    verifyPasswordInput.type = 'text';
+                    eyeIconVerify.classList.replace('bi-eye', 'bi-eye-slash');
+                } else {
+                    verifyPasswordInput.type = 'password';
+                    eyeIconVerify.classList.replace('bi-eye-slash', 'bi-eye');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

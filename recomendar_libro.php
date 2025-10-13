@@ -71,7 +71,7 @@ while ($row = $result->fetch_assoc()) {
         $l_media = fp_media($valor_libro_caract);
         $l_alta = fp_alta($valor_libro_caract);
 
-        // --- Aplicación de Reglas Difusas (Ejemplos) ---
+        // ---Aplicación de Reglas Difusas---
         // Regla 1: Usuario quiere ALTO y Libro es ALTO (Fuerte coincidencia positiva)
         $activacion_r1 = min($u_alta, $l_alta);
         $contribucion_caracteristica_actual += $activacion_r1 * 2.0; // Peso de la regla

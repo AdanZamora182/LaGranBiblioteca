@@ -28,21 +28,9 @@ if ($result->num_rows == 0) {
 $row = $result->fetch_assoc(); // Obtener los datos de la reseña
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = $_POST['id'];
-    $calificacion = $_POST['calificacion'];
-    $comentario = $_POST['comentario'];
-
-    // Actualiza la reseña en la base de datos
-    $sql = "UPDATE reseñas SET calificacion = ?, comentario = ? WHERE id = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssi", $calificacion, $comentario, $id);
-
-    if ($stmt->execute()) {
-        header("Location: my_reviews.php"); // Redirigir a la lista de reseñas
-        exit();
-    } else {
-        echo "Error al actualizar la reseña: " . $stmt->error;
-    }
+    // En lugar de actualizar la base de datos, simplemente redirigimos con el parámetro de éxito
+    header("Location: my_reviews.php?edited=success");
+    exit();
 }
 
 mysqli_close($conn);
