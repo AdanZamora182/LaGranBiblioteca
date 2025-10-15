@@ -33,30 +33,34 @@ $row_count = $result_count->fetch_assoc();
 $total_reviews = $row_count['total'];
 
 // Calcular el número total de páginas
-$total_pages = ceil($total_reviews / $reviews_per_page);
+$total_pages = $total_reviews > 0 ? ceil($total_reviews / $reviews_per_page) : 1;
 
 // Obtener la página actual de la URL, si no está presente, por defecto es la página 1
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 if ($page < 1) $page = 1;
 if ($page > $total_pages) $page = $total_pages;
 
-// Calcular el desplazamiento para la consulta SQL
-$offset = ($page - 1) * $reviews_per_page;
+// Calcular el desplazamiento para la consulta SQL - solo si hay reseñas
+$offset = $total_reviews > 0 ? ($page - 1) * $reviews_per_page : 0;
 
-// Consulta para obtener las reseñas del usuario con límite y desplazamiento
-$sql = "SELECT * FROM reseñas WHERE id_usuario = ? LIMIT ? OFFSET ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("iii", $id_usuario, $reviews_per_page, $offset);
-$stmt->execute();
-$result = $stmt->get_result();
 $reviews = [];
-while ($row = $result->fetch_assoc()) {
-    $reviews[] = $row;
+
+// Solo ejecutar la consulta si hay reseñas
+if ($total_reviews > 0) {
+    // Consulta para obtener las reseñas del usuario con límite y desplazamiento
+    $sql = "SELECT * FROM reseñas WHERE id_usuario = ? LIMIT ? OFFSET ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("iii", $id_usuario, $reviews_per_page, $offset);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_assoc()) {
+        $reviews[] = $row;
+    }
 }
 
 // Buscar reseñas por nombre de libro si se ha enviado un término de búsqueda
 $search_term = isset($_GET['search']) ? $_GET['search'] : '';
-if ($search_term && !isset($_GET['search_processed'])) {
+if ($search_term && !isset($_GET['search_processed']) && $total_reviews > 0) {
     $sql_search = "SELECT id FROM reseñas WHERE id_usuario = ? AND nombre_libro LIKE ?";
     $stmt_search = $conn->prepare($sql_search);
     $search_term_like = '%' . $search_term . '%';
@@ -244,12 +248,15 @@ if ($search_term && !isset($_GET['search_processed'])) {
             ?>
         <?php endif; ?>
         
-        <form method="GET" action="my_reviews.php" class="form-inline mb-3">
-            <input type="text" name="search" id="search" class="form-control mr-sm-2" placeholder="Buscar reseñas..." value="<?php echo htmlspecialchars($search_term); ?>"> <!-- Campo de búsqueda -->
-            <button type="submit" class="btn btn-outline-success my-2 my-sm-0">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
+        <?php if ($total_reviews > 0): ?>
+            <form method="GET" action="my_reviews.php" class="form-inline mb-3">
+                <input type="text" name="search" id="search" class="form-control mr-sm-2" placeholder="Buscar reseñas..." value="<?php echo htmlspecialchars($search_term); ?>">
+                <button type="submit" class="btn btn-outline-success my-2 my-sm-0">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        <?php endif; ?>
+        
         <?php if (count($reviews) > 0): ?>
             <table class="table table-striped">
                 <thead>
@@ -309,7 +316,14 @@ if ($search_term && !isset($_GET['search_processed'])) {
                 </ul>
             </nav>
         <?php else: ?>
-            <p>No tienes reseñas registradas.</p>
+            <p class="text-center" style="font-size: 1.2em; color: #666; margin-top: 50px;">Por el momento no tienes ninguna reseña para mostrar.</p>
+            <?php if ($total_reviews == 0): ?>
+                <div class="text-center mt-4">
+                    <a href="add_review.php" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Agregar tu primera reseña
+                    </a>
+                </div>
+            <?php endif; ?>
         <?php endif; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

@@ -10,13 +10,17 @@
  * - Calcula dinámicamente el desplazamiento (offset) para cada página de reseñas.
  */
 
-
 include 'config.php';
 
-$bookTitle = isset($_GET['book']) ? $_GET['book'] : ''; // Título del libro
+// Cambiar para buscar por ID del libro en lugar del título
+$bookId = isset($_GET['book_id']) ? $_GET['book_id'] : '';
+$bookTitle = isset($_GET['book']) ? $_GET['book'] : ''; // Mantener para compatibilidad
 $limit = 5;  // Número de reseñas por página
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Página actual
 $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
+
+// Debug: mostrar el ID que se está buscando
+// echo "<!-- Buscando reseñas para ID: " . htmlspecialchars($bookId) . " -->";
 ?>
 
 <!DOCTYPE html>
@@ -71,14 +75,39 @@ $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
         die("Error de conexión: " . mysqli_connect_error());
     }
 
-    // Obtener el total de reseñas y el promedio de calificación para el libro seleccionado 
-    $avgSql = "SELECT COUNT(*) as total, AVG(calificacion) as promedio FROM reseñas WHERE nombre_libro = ?";
-    $avgStmt = $conn->prepare($avgSql);
-    $avgStmt->bind_param("s", $bookTitle);
-    $avgStmt->execute();
-    $avgResult = $avgStmt->get_result();
-    $avgData = $avgResult->fetch_assoc();
-    $totalReviews = $avgData['total'];
+    // Si tenemos ID del libro, buscar por ID; si no, usar el título como fallback
+    if (!empty($bookId)) {
+        // Búsqueda por ID del libro
+        $avgSql = "SELECT COUNT(*) as total, AVG(calificacion) as promedio FROM reseñas WHERE id_libro = ?";
+        $avgStmt = $conn->prepare($avgSql);
+        $avgStmt->bind_param("s", $bookId);
+        $avgStmt->execute();
+        $avgResult = $avgStmt->get_result();
+        $avgData = $avgResult->fetch_assoc();
+        $totalReviews = $avgData['total'];
+    } else {
+        // Fallback: búsqueda por título (código anterior)
+        $avgSql = "SELECT COUNT(*) as total, AVG(calificacion) as promedio FROM reseñas WHERE nombre_libro = ?";
+        $avgStmt = $conn->prepare($avgSql);
+        $avgStmt->bind_param("s", $bookTitle);
+        $avgStmt->execute();
+        $avgResult = $avgStmt->get_result();
+        $avgData = $avgResult->fetch_assoc();
+        $totalReviews = $avgData['total'];
+        
+        // Si no se encuentran resultados, intentar búsqueda parcial
+        if ($totalReviews == 0) {
+            $searchPattern = '%' . $bookTitle . '%';
+            $avgSql = "SELECT COUNT(*) as total, AVG(calificacion) as promedio FROM reseñas WHERE nombre_libro LIKE ?";
+            $avgStmt = $conn->prepare($avgSql);
+            $avgStmt->bind_param("s", $searchPattern);
+            $avgStmt->execute();
+            $avgResult = $avgStmt->get_result();
+            $avgData = $avgResult->fetch_assoc();
+            $totalReviews = $avgData['total'];
+        }
+    }
+    
     $averageRating = round($avgData['promedio'], 1);
 
     // Calcular el número total de páginas (redondeando hacia arriba)
@@ -111,22 +140,53 @@ $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
 
     // Consulta SQL para obtener reseñas con límite y desplazamiento (para la paginación) 
     if ($totalReviews > 0) {
-        $sql = "SELECT r.id, r.calificacion, r.comentario, u.nombre AS nombre_usuario
-                FROM reseñas r
-                LEFT JOIN usuarios u ON r.id_usuario = u.id
-                WHERE r.nombre_libro = ?
-                ORDER BY r.id DESC
-                LIMIT ? OFFSET ?";
-        
-        // Preparar y ejecutar la consulta
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sii", $bookTitle, $limit, $offset);
-        $stmt->execute();
-        $result = $stmt->get_result();
+        if (!empty($bookId)) {
+            // Buscar por ID del libro
+            $sql = "SELECT r.id, r.calificacion, r.comentario, u.nombre AS nombre_usuario
+                    FROM reseñas r
+                    LEFT JOIN usuarios u ON r.id_usuario = u.id
+                    WHERE r.id_libro = ?
+                    ORDER BY r.id DESC
+                    LIMIT ? OFFSET ?";
+            
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("sii", $bookId, $limit, $offset);
+            $stmt->execute();
+            $result = $stmt->get_result();
+        } else {
+            // Fallback: usar la lógica anterior por título
+            $sql = "SELECT r.id, r.calificacion, r.comentario, u.nombre AS nombre_usuario
+                    FROM reseñas r
+                    LEFT JOIN usuarios u ON r.id_usuario = u.id
+                    WHERE r.nombre_libro = ?
+                    ORDER BY r.id DESC
+                    LIMIT ? OFFSET ?";
+            
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("sii", $bookTitle, $limit, $offset);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            
+            // Si no hay resultados con búsqueda exacta, usar búsqueda parcial
+            if ($result->num_rows == 0) {
+                $searchPattern = '%' . $bookTitle . '%';
+                $sql = "SELECT r.id, r.calificacion, r.comentario, u.nombre AS nombre_usuario
+                        FROM reseñas r
+                        LEFT JOIN usuarios u ON r.id_usuario = u.id
+                        WHERE r.nombre_libro LIKE ?
+                        ORDER BY r.id DESC
+                        LIMIT ? OFFSET ?";
+                
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("sii", $searchPattern, $limit, $offset);
+                $stmt->execute();
+                $result = $stmt->get_result();
+            }
+        }
 
         // Sección de reseñas individuales
         echo "<section class='reviews-section'>";
-        if ($result && $result->num_rows > 0) { // Mostrar reseñas si hay resultados 
+        if ($result && $result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='review-card'>";
                 echo "<h5>Usuario: " . htmlspecialchars($row['nombre_usuario']) . "</h5>";
@@ -134,11 +194,11 @@ $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
                 // Calificación en estrellas (de 1 a 5)
                 echo "<p><strong>Calificación:</strong> ";
                 for ($i = 1; $i <= 5; $i++) {
-                    echo $i <= $row['calificacion'] ? // Estrella llena si $i es menor o igual a la calificación
-                         "<span class='star-filled'><i class='fas fa-star'></i></span>" :  // Estrella llena
-                         "<span class='star-empty'><i class='far fa-star'></i></span>"; // Estrella vacía
+                    echo $i <= $row['calificacion'] ?
+                         "<span class='star-filled'><i class='fas fa-star'></i></span>" :
+                         "<span class='star-empty'><i class='far fa-star'></i></span>";
                 }
-                echo " (" . htmlspecialchars($row['calificacion']) . "/5)</p>"; // Calificación numérica
+                echo " (" . htmlspecialchars($row['calificacion']) . "/5)</p>";
                 
                 // Comentario
                 if (isset($row['comentario'])) {
@@ -149,28 +209,31 @@ $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
         }
         echo "</section>";
 
-        // Modificar la sección de paginación para trabajar mejor con AJAX
+        // Modificar la sección de paginación para incluir el book_id
         if ($totalPages > 1) {
             echo "<nav aria-label='Page navigation'>";
             echo "<ul class='pagination justify-content-center mt-4'>";
             
+            // Construir parámetros para la URL
+            $urlParams = !empty($bookId) ? "book_id=" . urlencode($bookId) : "book=" . urlencode($bookTitle);
+            
             // Botón Anterior 
             if ($page > 1) {
                 echo "<li class='page-item'>";
-                echo "<a class='page-link' href='?book=" . urlencode($bookTitle) . "&page=" . ($page - 1) . "' data-page='" . ($page - 1) . "' aria-label='Anterior'>";
+                echo "<a class='page-link' href='?{$urlParams}&page=" . ($page - 1) . "' data-page='" . ($page - 1) . "' aria-label='Anterior'>";
                 echo "<span aria-hidden='true'>&laquo;</span></a></li>";
             }
             
             // Números de página 
             for ($i = 1; $i <= $totalPages; $i++) {
                 echo "<li class='page-item " . ($i == $page ? 'active' : '') . "'>";
-                echo "<a class='page-link' href='?book=" . urlencode($bookTitle) . "&page=$i' data-page='$i'>$i</a></li>";
+                echo "<a class='page-link' href='?{$urlParams}&page=$i' data-page='$i'>$i</a></li>";
             }
             
             // Botón Siguiente
             if ($page < $totalPages) {
                 echo "<li class='page-item'>";
-                echo "<a class='page-link' href='?book=" . urlencode($bookTitle) . "&page=" . ($page + 1) . "' data-page='" . ($page + 1) . "' aria-label='Siguiente'>";
+                echo "<a class='page-link' href='?{$urlParams}&page=" . ($page + 1) . "' data-page='" . ($page + 1) . "' aria-label='Siguiente'>";
                 echo "<span aria-hidden='true'>&raquo;</span></a></li>";
             }
             
@@ -178,6 +241,17 @@ $offset = ($page - 1) * $limit; // Desplazamiento para la consulta SQL
         }
     } else {
         echo "<div class='alert alert-info'>No hay reseñas disponibles para este libro.</div>";
+        
+        // Debug: mostrar qué libros están en la base de datos
+        echo "<!-- Debug: IDs de libros en la base de datos: ";
+        $debugSql = "SELECT DISTINCT id_libro, nombre_libro FROM reseñas LIMIT 10";
+        $debugResult = $conn->query($debugSql);
+        if ($debugResult) {
+            while ($debugRow = $debugResult->fetch_assoc()) {
+                echo "ID: " . htmlspecialchars($debugRow['id_libro']) . " - " . htmlspecialchars($debugRow['nombre_libro']) . " | ";
+            }
+        }
+        echo " -->";
     }
     ?>
 </div>

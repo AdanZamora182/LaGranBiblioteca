@@ -70,9 +70,46 @@ function searchUserReviews($userId, $searchTerm) {
     return $reviews;
 }
 
+// Función para buscar libros y devolver datos en formato JSON para autocompletado
+function searchBooksForAutocomplete($query) {
+    $apiKey = 'AIzaSyCzQE7O9KMS_5H5DIVoLWs-B33jLY3to8Q';
+    $url = "https://www.googleapis.com/books/v1/volumes?q=" . urlencode($query) . "&key=" . $apiKey . "&maxResults=10";
+    
+    $response = @file_get_contents($url);
+    $data = json_decode($response, true);
+    
+    $books = [];
+    
+    if (isset($data['items']) && is_array($data['items'])) {
+        foreach ($data['items'] as $book) {
+            $title = $book['volumeInfo']['title'] ?? 'Título desconocido';
+            $authors = isset($book['volumeInfo']['authors']) ? implode(', ', $book['volumeInfo']['authors']) : 'Autor desconocido';
+            $id = $book['id'];
+            
+            $books[] = [
+                'id' => $id,
+                'title' => $title,
+                'authors' => $authors,
+                'display' => $title . ' - ' . $authors
+            ];
+        }
+    }
+    
+    return $books;
+}
+
 // Comprueba si se ha recibido un título de un libro en la solicitud
 if (isset($_GET['title'])) {
     $title = $_GET['title'];
     getBooksByTitle($title);
+}
+
+// Nueva funcionalidad para autocompletado
+if (isset($_GET['autocomplete']) && isset($_GET['query'])) {
+    $query = $_GET['query'];
+    $books = searchBooksForAutocomplete($query);
+    header('Content-Type: application/json');
+    echo json_encode($books);
+    exit;
 }
 ?>

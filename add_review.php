@@ -76,35 +76,89 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         input[type="submit"]:hover { background-color: #1A5276; }
         .libros-container { margin-top: 20px; }
         
+        /* Estilos para los botones de navegación */
         .back-to-home-btn, .back-to-reviews-btn {
             position: absolute;
             top: 20px;
             color: #fff;
-            background-color: #ff8c00; /* Color naranja oscuro */
+            background-color: #ff8c00;
             padding: 10px;
             border-radius: 50%;
             text-decoration: none;
-            border: none; /* Quitar borde */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none; /* Quitar subrayado */
         }
+        
         .back-to-home-btn {
             left: 20px;
         }
+        
         .back-to-reviews-btn {
             left: 70px; 
         }
+        
         .back-to-home-btn:hover, .back-to-reviews-btn:hover {
-            background-color: #e67e22 !important; 
-            transform: scale(1.1); /* Efecto de escala */
-            color: #fff; 
+            background-color: #e67e22 !important;
+            transform: scale(1.1);
+            color: #fff;
             text-decoration: none; /* Quitar subrayado */
         }
+        
         .back-to-home-btn i, .back-to-reviews-btn i {
             font-size: 20px;
+        }
+        
+        /* Estilos para el autocompletado */
+        .autocomplete-container {
+            position: relative;
+            width: 100%;
+        }
+        
+        .autocomplete-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #2C3E50;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .autocomplete-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s;
+        }
+        
+        .autocomplete-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+        
+        .autocomplete-item.selected {
+            background-color: #3498DB;
+            color: white;
+        }
+        
+        #titulo {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .autocomplete-container.open #titulo {
+            border-radius: 5px 5px 0 0;
         }
     </style>
 </head>
@@ -129,13 +183,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </button>
                 </div>
             <?php endif; ?>
+            
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"> <!-- Formulario para agregar reseñas --> 
                 <label for="titulo">Buscar Libro:</label>
-                <input type="text" id="titulo" name="titulo" oninput="buscarLibros()" required>   
+                <div class="autocomplete-container">
+                    <input type="text" id="titulo" name="titulo" placeholder="Escribe el título del libro..." required>
+                    <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+                </div>
 
-                <input type="hidden" id="id_libro" name="id_libro"> 
-                <input type="hidden" id="nombre_libro" name="nombre_libro"> 
-                <div class="libros-container" id="libros"></div>
+                <input type="hidden" id="id_libro" name="id_libro" required> 
+                <input type="hidden" id="nombre_libro" name="nombre_libro" required> 
                 
                 <label for="calificacion">Calificación (1-5):</label>
                 <input type="number" id="calificacion" name="calificacion" min="1" max="5" required> 
@@ -149,36 +206,121 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <script>
-        // Función para buscar libros utilizando la API de Google Books
-        function buscarLibros() {
-            const titulo = document.getElementById('titulo').value; // Obtiene el título del libro
-            const contenedorLibros = document.getElementById('libros'); // Obtiene el contenedor de libros
-
-            // Limpia los libros anteriores
-            contenedorLibros.innerHTML = '';
-
-            if (titulo) {
-                // Realiza la llamada a la API de Google Books
-                fetch(`search_books.php?title=${encodeURIComponent(titulo)}`)
-                    .then(response => response.text())
-                    .then(data => {
-                        contenedorLibros.innerHTML = data;
-                        // Agrega el evento para actualizar el ID y nombre del libro seleccionado
-                        const libros = contenedorLibros.querySelectorAll('.libro-item'); 
-                        libros.forEach(libro => {
-                            libro.addEventListener('click', function() { // Evento al hacer clic en un libro
-                                const idLibro = this.dataset.id; 
-                                const nombreLibro = this.textContent; 
-                                document.getElementById('id_libro').value = idLibro; // Actualiza el ID del libro
-                                document.getElementById('nombre_libro').value = nombreLibro; // Actualiza el nombre del libro
-                                document.getElementById('titulo').value = nombreLibro; // Actualiza el título visible
-                                contenedorLibros.innerHTML = ''; // Limpia los resultados después de seleccionar
-                            });
-                        });
-                    })
-                    .catch(error => console.error('Error al cargar libros:', error));
+        let currentBooks = [];
+        let selectedIndex = -1;
+        let searchTimeout;
+        
+        const tituloInput = document.getElementById('titulo');
+        const dropdown = document.getElementById('autocomplete-dropdown');
+        const autocompleteContainer = document.querySelector('.autocomplete-container');
+        
+        // Función para buscar libros con autocompletado
+        function buscarLibros(query) {
+            if (!query || query.length < 2) {
+                hideDropdown();
+                return;
             }
+            
+            fetch(`search_books.php?autocomplete=1&query=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(books => {
+                    currentBooks = books;
+                    showDropdown(books);
+                })
+                .catch(error => {
+                    console.error('Error al buscar libros:', error);
+                    hideDropdown();
+                });
         }
+        
+        // Mostrar dropdown con resultados
+        function showDropdown(books) {
+            dropdown.innerHTML = '';
+            
+            if (books.length === 0) {
+                dropdown.innerHTML = '<div class="autocomplete-item">No se encontraron libros</div>';
+            } else {
+                books.forEach((book, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'autocomplete-item';
+                    item.textContent = book.display;
+                    item.addEventListener('click', () => selectBook(book));
+                    dropdown.appendChild(item);
+                });
+            }
+            
+            dropdown.style.display = 'block';
+            autocompleteContainer.classList.add('open');
+            selectedIndex = -1;
+        }
+        
+        // Ocultar dropdown
+        function hideDropdown() {
+            dropdown.style.display = 'none';
+            autocompleteContainer.classList.remove('open');
+            selectedIndex = -1;
+        }
+        
+        // Seleccionar un libro
+        function selectBook(book) {
+            document.getElementById('titulo').value = book.display;
+            document.getElementById('id_libro').value = book.id;
+            document.getElementById('nombre_libro').value = book.title;
+            hideDropdown();
+        }
+        
+        // Event listeners
+        tituloInput.addEventListener('input', function(e) {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                buscarLibros(e.target.value);
+            }, 300);
+        });
+        
+        tituloInput.addEventListener('keydown', function(e) {
+            const items = dropdown.querySelectorAll('.autocomplete-item');
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+                updateSelection(items);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selectedIndex = Math.max(selectedIndex - 1, -1);
+                updateSelection(items);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (selectedIndex >= 0 && currentBooks[selectedIndex]) {
+                    selectBook(currentBooks[selectedIndex]);
+                }
+            } else if (e.key === 'Escape') {
+                hideDropdown();
+            }
+        });
+        
+        // Actualizar selección visual
+        function updateSelection(items) {
+            items.forEach((item, index) => {
+                item.classList.toggle('selected', index === selectedIndex);
+            });
+        }
+        
+        // Cerrar dropdown al hacer clic fuera
+        document.addEventListener('click', function(e) {
+            if (!autocompleteContainer.contains(e.target)) {
+                hideDropdown();
+            }
+        });
+        
+        // Validar formulario antes de enviar
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const idLibro = document.getElementById('id_libro').value;
+            if (!idLibro) {
+                e.preventDefault();
+                alert('Por favor selecciona un libro de la lista');
+                tituloInput.focus();
+            }
+        });
 
         // Ocultar el mensaje de éxito después de 3 segundos
         $(document).ready(function() {

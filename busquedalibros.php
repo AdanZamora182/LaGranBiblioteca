@@ -280,6 +280,43 @@
             return { cleanDescription, shortDescription };
         }
 
+        // Función modificada para cargar reseñas del libro usando ID en lugar de título
+        async function loadReviews(bookTitle, page = 1, bookId = null) {
+            try {
+                let url;
+                if (bookId) {
+                    // Usar ID del libro si está disponible
+                    url = `resenas.php?book_id=${encodeURIComponent(bookId)}&page=${page}`;
+                    console.log('Cargando reseñas para ID:', bookId);
+                } else {
+                    // Fallback al título si no hay ID
+                    const encodedTitle = encodeURIComponent(bookTitle.trim());
+                    url = `resenas.php?book=${encodedTitle}&page=${page}`;
+                    console.log('Cargando reseñas para título:', bookTitle);
+                }
+                
+                const response = await fetch(url);
+                const reviewsHtml = await response.text();
+                const reviewsContainer = document.getElementById('reviews');
+                reviewsContainer.innerHTML = reviewsHtml;
+
+                // Agregar event listeners a los enlaces de paginación
+                const paginationLinks = reviewsContainer.querySelectorAll('.pagination a');
+                paginationLinks.forEach(link => {
+                    link.addEventListener('click', async (e) => {
+                        e.preventDefault();
+                        const url = new URL(link.href);
+                        const newPage = url.searchParams.get('page');
+                        await loadReviews(bookTitle, newPage, bookId); // Pasar bookId también
+                        reviewsContainer.scrollIntoView({ behavior: 'smooth' });
+                    });
+                });
+            } catch (error) {
+                document.getElementById('reviews').innerHTML = '<p>Error al cargar las reseñas.</p>';
+                console.error('Error:', error);
+            }
+        }
+
         // Función principal para mostrar detalles del libro
         async function showBookDetail(bookId) {
             loadingIndicator.style.display = 'block';
@@ -288,16 +325,13 @@
             document.querySelector('.search-container').style.display = 'none';
 
             try {
-                // Realizar la solicitud a la API de Google Books para obtener detalles del libro
                 const response = await fetch(`https://www.googleapis.com/books/v1/volumes/${bookId}`);
                 const book = await response.json();
                 const bookInfo = book.volumeInfo;
                 
-                // Obtener descripciones limpia y resumida
                 const { cleanDescription, shortDescription } = getDescriptions(bookInfo.description);
                 const showExpandButton = cleanDescription.length > shortDescription.length;
                 
-                // Contenido HTML para mostrar los detalles del libro
                 bookDetailContainer.innerHTML = `
                     <a href="#" class="back-btn" onclick="goBack()">← Volver a resultados</a>
                     <div style="position: relative;">
@@ -327,13 +361,12 @@
                     </div>
                 `;
 
-                // Guardar la descripción completa y corta en data-attributes
                 const descriptionContainer = document.getElementById('description-container');
                 descriptionContainer.dataset.fullDescription = cleanDescription;
                 descriptionContainer.dataset.shortDescription = shortDescription;
 
-                // Cargar reseñas del libro con la página inicial
-                loadReviews(bookInfo.title, 1);
+                // Cargar reseñas usando el ID del libro
+                loadReviews(bookInfo.title, 1, book.id);
 
                 bookDetailContainer.style.display = 'block'; 
             } catch (error) {
@@ -342,33 +375,6 @@
             }
 
             loadingIndicator.style.display = 'none';
-        }
-
-        // Función modificada para cargar reseñas del libro
-        async function loadReviews(bookTitle, page = 1) {
-            try {
-                // Realizar la solicitud a un archivo PHP para obtener reseñas
-                const response = await fetch(`resenas.php?book=${encodeURIComponent(bookTitle)}&page=${page}`);
-                const reviewsHtml = await response.text();
-                const reviewsContainer = document.getElementById('reviews');
-                reviewsContainer.innerHTML = reviewsHtml;
-
-                // Agregar event listeners a los enlaces de paginación
-                const paginationLinks = reviewsContainer.querySelectorAll('.pagination a');
-                paginationLinks.forEach(link => {
-                    link.addEventListener('click', async (e) => { // Cargar reseñas al hacer clic en la paginación
-                        e.preventDefault();
-                        const url = new URL(link.href); // Obtener la URL del enlace
-                        const newPage = url.searchParams.get('page'); // Obtener el número de página
-                        await loadReviews(bookTitle, newPage); // Cargar reseñas con la nueva página
-                        // Scroll suave hasta las reseñas
-                        reviewsContainer.scrollIntoView({ behavior: 'smooth' });
-                    });
-                });
-            } catch (error) {
-                document.getElementById('reviews').innerHTML = '<p>Error al cargar las reseñas.</p>';
-                console.error('Error:', error);
-            }
         }
 
         // Función para alternar entre descripción completa y resumida

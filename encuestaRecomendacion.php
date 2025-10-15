@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recomendación de Libros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
     
@@ -76,6 +77,7 @@
     
     input[type=range] {
       -webkit-appearance: none;
+      appearance: none;
       width: 100%;
       height: 8px;
       background: linear-gradient(to right, #e0e0e0, #3498db);
@@ -177,9 +179,42 @@
     .home-link:hover {
       color: #3498db;
     }
+    
+    /* Estilos para los botones de navegación */
+    .back-to-home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      background-color: #ff8c00;
+      padding: 10px;
+      border-radius: 50%;
+      text-decoration: none;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; /* Quitar subrayado */
+    }
+    
+    .back-to-home-btn:hover {
+      background-color: #e67e22 !important;
+      transform: scale(1.1);
+      color: #fff;
+      text-decoration: none; /* Quitar subrayado */
+    }
+    
+    .back-to-home-btn i {
+      font-size: 20px;
+    }
   </style>
 </head>
 <body>
+  <a href="home.php" class="back-to-home-btn">
+    <i class="fas fa-home"></i>
+  </a>
+  
   <h2>Encuesta de Recomendación de Libros</h2>
   <div class="container">
     <form id="formularioLibro">
