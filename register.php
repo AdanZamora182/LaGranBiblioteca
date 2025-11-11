@@ -46,236 +46,446 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
-    
+    <title>Registro de Usuario - La Gran Biblioteca</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); 
-        
-        /* Estilos generales */
-        html, body {
-            height: 100%;
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Raleway', sans-serif;
-            background: linear-gradient(120deg, #f0f2f5 40%, #ffffff 100%);
-            color: #333;
+            box-sizing: border-box;
         }
 
-        /* Estilos para el contenedor principal */
-        .wrapper {
-            min-height: 100%;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
-        .content {
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #667eea !important;
+        }
+
+        .main-content {
             flex: 1;
-            max-width: 600px; 
-            margin: 180px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
         }
 
-        .header {
-            background-color: #2C3E50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .header h1 {
-            font-size: 2em;
-            margin: 0;
-        }
-
-        /* Estilos para el contenido */
-        h2 {
-            font-size: 1.8em; /* Título ajustado */
-            color: #2C3E50;
-            margin-bottom: 20px;
-        }
-
-        form {
+        .register-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            max-width: 500px;
             width: 100%;
+            animation: slideUp 0.5s ease-out;
         }
 
-        label {
-            font-size: 1.1em; /* Tamaño de fuente ajustado */
-            color: #34495E;
-            margin-bottom: 8px;
-            display: block;
-            text-align: left;
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        /* Estilos para los inputs y botón */
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: calc(100% - 16px); /* Ajustamos el ancho de los inputs */
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 1em; /* Ajustamos el tamaño del texto */
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #E74C3C;
+        .card-header-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 10px 20px;
-            font-size: 1.1em;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #C0392B;
-            transform: scale(1.05);
-        }
-
-        /* Estilos para el footer */
-        .footer {
-            background-color: #2C3E50;
-            color: #ecf0f1;
-            padding: 20px 0;
+            padding: 2rem;
             text-align: center;
         }
 
-        .footer p {
-            margin: 0;
+        .card-header-custom i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
-        .active-eye {
-            color: #007bff !important; /* Azul Bootstrap cuando está activo */
+        .card-header-custom h2 {
+            font-weight: 600;
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .card-body-custom {
+            padding: 2.5rem;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #6c757d;
+            cursor: pointer;
+            z-index: 10;
+            padding: 0;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .password-toggle:hover {
+            color: #667eea;
+        }
+
+        .password-toggle.active {
+            color: #667eea;
+        }
+
+        .btn-register {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-register:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .btn-back {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.75rem;
+            font-size: 1rem;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            text-align: center;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #e0e0e0;
+        }
+
+        .divider span {
+            background: white;
+            padding: 0 1rem;
+            position: relative;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .password-strength {
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .password-strength.weak {
+            color: #dc3545;
+        }
+
+        .password-strength.medium {
+            color: #ffc107;
+        }
+
+        .password-strength.strong {
+            color: #28a745;
+        }
+
+        .footer-custom {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-custom p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 576px) {
+            .card-body-custom {
+                padding: 1.5rem;
+            }
+
+            .register-card {
+                margin: 1rem;
+            }
         }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-
-    <div class="wrapper">
-        <div class="header">
-            <h1>La Gran Biblioteca</h1>
-        </div>
-
-        <div class="content">
-            <h2>Registro de Usuario</h2>
-            
-            <?php if (!empty($error_message)): ?>
-                <div style="background-color: #f8d7da; color: #721c24; padding: 12px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #f5c6cb;">
-                    <strong>Error:</strong> <?php echo htmlspecialchars($error_message); ?>
-                </div>
-            <?php endif; ?>
-            
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="registerForm"> <!--- Formulario de registro -->
-                
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="contraseña">Contraseña:</label>
-                <div style="position: relative; margin-bottom: 15px;">
-                    <input type="password" id="contraseña" name="contraseña" required style="padding-right: 40px; width: 100%;">
-                    <button type="button" id="eye-btn" tabindex="-1"
-                        style="position: absolute; right: 8px; top: 38%; transform: translateY(-50%);
-                               background: transparent; border: none; outline: none;
-                               width: 24px; height: 24px; line-height: 1; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-eye" id="eye-icon" style="font-size: 1.2em; color: #888; transition: color 0.2s; display: block; margin: 0;"></i>
-                    </button>
-                </div>
-                
-                <!-- Campo para verificar contraseña -->
-                <label for="verificar_contraseña">Verificar Contraseña:</label>
-                <div style="position: relative; margin-bottom: 15px;">
-                    <input type="password" id="verificar_contraseña" name="verificar_contraseña" required style="padding-right: 40px; width: 100%;">
-                    <button type="button" id="eye-btn-verify" tabindex="-1"
-                        style="position: absolute; right: 8px; top: 38%; transform: translateY(-50%);
-                               background: transparent; border: none; outline: none;
-                               width: 24px; height: 24px; line-height: 1; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-eye" id="eye-icon-verify" style="font-size: 1.2em; color: #888; transition: color 0.2s; display: block; margin: 0;"></i>
-                    </button>
-                </div>
-                
-                <div id="password-error" style="color:#E74C3C; font-size:1em; margin-bottom:10px; display:none;"></div>
-                
-                <input type="submit" value="Registrar">
-            </form>
-            <a href="index.php" class="btn btn-secondary mt-3"> <!--- Botón para regresar al index -->
-                <i class="fas fa-arrow-left"></i> Regresar
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">
+                <i class="bi bi-book-fill me-2"></i>La Gran Biblioteca
             </a>
         </div>
+    </nav>
 
-        <!--- Pie de pagina -->
-        <div class="footer">
-            <p>&copy; 2024 La Gran Biblioteca. Todos los derechos reservados.</p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="register-card">
+            <!-- Card Header -->
+            <div class="card-header-custom">
+                <i class="bi bi-person-plus-fill"></i>
+                <h2>Registro de Usuario</h2>
+                <p class="mb-0" style="opacity: 0.9;">Crea tu cuenta y comienza a explorar</p>
+            </div>
+
+            <!-- Card Body -->
+            <div class="card-body-custom">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="registerForm">
+                    <!-- Name Input -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">
+                            <i class="bi bi-person me-2"></i>Nombre Completo
+                        </label>
+                        <input type="text" class="form-control" id="nombre" name="nombre"
+                               placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            <i class="bi bi-envelope me-2"></i>Correo Electrónico
+                        </label>
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="mb-3">
+                        <label for="contraseña" class="form-label">
+                            <i class="bi bi-lock me-2"></i>Contraseña
+                        </label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="contraseña" name="contraseña"
+                                   placeholder="Crea una contraseña segura" required>
+                            <button type="button" class="password-toggle" id="togglePassword">
+                                <i class="bi bi-eye" id="eyeIcon"></i>
+                            </button>
+                        </div>
+                        <div id="passwordStrength" class="password-strength"></div>
+                    </div>
+
+                    <!-- Confirm Password Input -->
+                    <div class="mb-4">
+                        <label for="verificar_contraseña" class="form-label">
+                            <i class="bi bi-lock-fill me-2"></i>Confirmar Contraseña
+                        </label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="verificar_contraseña" name="verificar_contraseña"
+                                   placeholder="Confirma tu contraseña" required>
+                            <button type="button" class="password-toggle" id="togglePasswordVerify">
+                                <i class="bi bi-eye" id="eyeIconVerify"></i>
+                            </button>
+                        </div>
+                        <div id="passwordMatch" class="password-strength"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-register mb-3">
+                        <i class="bi bi-person-check me-2"></i>Crear Cuenta
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span>o</span>
+                </div>
+
+                <!-- Back Button -->
+                <a href="index.php" class="btn btn-back">
+                    <i class="bi bi-arrow-left me-2"></i>Regresar al Inicio
+                </a>
+            </div>
         </div>
     </div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <p>&copy; 2024 La Gran Biblioteca. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toaster JS -->
+    <script src="toaster.js"></script>
+
     <script>
-        // Funcionalidad para mostrar/ocultar contraseña
         document.addEventListener('DOMContentLoaded', function() {
-            // Código para el primer campo de contraseña
-            var eyeBtn = document.getElementById('eye-btn');
-            var eyeIcon = document.getElementById('eye-icon');
-            var passwordInput = document.getElementById('contraseña');
-            
-            eyeBtn.addEventListener('click', function() {
-                // Toggle la clase para cambiar el color
-                eyeIcon.classList.toggle('active-eye');
-                
-                // Toggle el tipo de input entre password y text
-                if (passwordInput.type === 'password') {
-                    passwordInput.type = 'text';
-                    eyeIcon.classList.replace('bi-eye', 'bi-eye-slash');
+            // Toggle password visibility for password field
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('contraseña');
+            const eyeIcon = document.getElementById('eyeIcon');
+
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.type === 'password' ? 'text' : 'password';
+                passwordInput.type = type;
+                eyeIcon.classList.toggle('bi-eye');
+                eyeIcon.classList.toggle('bi-eye-slash');
+                this.classList.toggle('active');
+            });
+
+            // Toggle password visibility for verify password field
+            const togglePasswordVerify = document.getElementById('togglePasswordVerify');
+            const verifyPasswordInput = document.getElementById('verificar_contraseña');
+            const eyeIconVerify = document.getElementById('eyeIconVerify');
+
+            togglePasswordVerify.addEventListener('click', function() {
+                const type = verifyPasswordInput.type === 'password' ? 'text' : 'password';
+                verifyPasswordInput.type = type;
+                eyeIconVerify.classList.toggle('bi-eye');
+                eyeIconVerify.classList.toggle('bi-eye-slash');
+                this.classList.toggle('active');
+            });
+
+            // Password strength indicator
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                const strengthIndicator = document.getElementById('passwordStrength');
+
+                if (password.length === 0) {
+                    strengthIndicator.style.display = 'none';
+                    return;
+                }
+
+                strengthIndicator.style.display = 'block';
+                let strength = 0;
+
+                if (password.length >= 8) strength++;
+                if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+                if (/\d/.test(password)) strength++;
+                if (/[^a-zA-Z\d]/.test(password)) strength++;
+
+                strengthIndicator.className = 'password-strength';
+                if (strength <= 1) {
+                    strengthIndicator.classList.add('weak');
+                    strengthIndicator.textContent = '⚠ Contraseña débil';
+                } else if (strength === 2 || strength === 3) {
+                    strengthIndicator.classList.add('medium');
+                    strengthIndicator.textContent = '✓ Contraseña aceptable';
                 } else {
-                    passwordInput.type = 'password';
-                    eyeIcon.classList.replace('bi-eye-slash', 'bi-eye');
+                    strengthIndicator.classList.add('strong');
+                    strengthIndicator.textContent = '✓ Contraseña fuerte';
                 }
             });
-            
-            // Código para el campo de verificación de contraseña
-            var eyeBtnVerify = document.getElementById('eye-btn-verify');
-            var eyeIconVerify = document.getElementById('eye-icon-verify');
-            var verifyPasswordInput = document.getElementById('verificar_contraseña');
-            
-            eyeBtnVerify.addEventListener('click', function() {
-                // Toggle la clase para cambiar el color
-                eyeIconVerify.classList.toggle('active-eye');
-                
-                // Toggle el tipo de input entre password y text
-                if (verifyPasswordInput.type === 'password') {
-                    verifyPasswordInput.type = 'text';
-                    eyeIconVerify.classList.replace('bi-eye', 'bi-eye-slash');
+
+            // Password match indicator
+            verifyPasswordInput.addEventListener('input', function() {
+                const password = passwordInput.value;
+                const verifyPassword = this.value;
+                const matchIndicator = document.getElementById('passwordMatch');
+
+                if (verifyPassword.length === 0) {
+                    matchIndicator.style.display = 'none';
+                    return;
+                }
+
+                matchIndicator.style.display = 'block';
+                matchIndicator.className = 'password-strength';
+
+                if (password === verifyPassword) {
+                    matchIndicator.classList.add('strong');
+                    matchIndicator.textContent = '✓ Las contraseñas coinciden';
                 } else {
-                    verifyPasswordInput.type = 'password';
-                    eyeIconVerify.classList.replace('bi-eye-slash', 'bi-eye');
+                    matchIndicator.classList.add('weak');
+                    matchIndicator.textContent = '✗ Las contraseñas no coinciden';
                 }
             });
-        });
-        
-        // Validación de contraseñas iguales antes de enviar el formulario
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            var password = document.getElementById('contraseña').value;
-            var verifyPassword = document.getElementById('verificar_contraseña').value;
-            var errorDiv = document.getElementById('password-error');
-            if (password !== verifyPassword) {
-                errorDiv.textContent = "Las contraseñas no coinciden.";
-                errorDiv.style.display = "block";
-                e.preventDefault();
-            } else {
-                errorDiv.style.display = "none";
-            }
+
+            // Form validation
+            document.getElementById('registerForm').addEventListener('submit', function(e) {
+                const password = passwordInput.value;
+                const verifyPassword = verifyPasswordInput.value;
+
+                if (password !== verifyPassword) {
+                    e.preventDefault();
+                    showErrorToast('Las contraseñas no coinciden. Por favor, verifica que ambas contraseñas sean iguales.');
+                    return false;
+                }
+
+                if (password.length < 6) {
+                    e.preventDefault();
+                    showWarningToast('La contraseña debe tener al menos 6 caracteres.');
+                    return false;
+                }
+            });
+
+            // Show error toast if there's an error
+            <?php if (!empty($error_message)): ?>
+                showErrorToast('<?php echo addslashes($error_message); ?>');
+            <?php endif; ?>
         });
     </script>
 </body>
