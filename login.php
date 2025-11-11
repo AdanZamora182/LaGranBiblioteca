@@ -51,22 +51,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2C3E50 0%, #E74C3C 100%);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
         .navbar-custom {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            background: #2C3E50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-brand {
             font-weight: 700;
             font-size: 1.5rem;
-            color: #667eea !important;
+            color: white !important;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            border-radius: 8px;
         }
 
         .main-content {
@@ -99,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .card-header-custom {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2C3E50 0%, #E74C3C 100%);
             color: white;
             padding: 2rem;
             text-align: center;
@@ -135,8 +142,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .form-control:focus {
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            border-color: #E74C3C;
+            box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
         }
 
         .input-group {
@@ -159,15 +166,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .password-toggle:hover {
-            color: #667eea;
+            color: #E74C3C;
         }
 
         .password-toggle.active {
-            color: #667eea;
+            color: #E74C3C;
         }
 
         .btn-login {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
             border: none;
             border-radius: 10px;
             color: white;
@@ -180,15 +187,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .btn-login:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%);
         }
 
         .btn-back {
             background: white;
-            border: 2px solid #667eea;
+            border: 2px solid #2C3E50;
             border-radius: 10px;
-            color: #667eea;
+            color: #2C3E50;
             font-weight: 600;
             padding: 0.75rem;
             font-size: 1rem;
@@ -197,7 +204,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .btn-back:hover {
-            background: #667eea;
+            background: #2C3E50;
             color: white;
             transform: translateY(-2px);
         }
@@ -227,8 +234,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .footer-custom {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: #2C3E50;
             color: white;
             text-align: center;
             padding: 1.5rem;
@@ -253,10 +259,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-custom navbar-light">
+    <nav class="navbar navbar-custom navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <i class="bi bi-book-fill me-2"></i>La Gran Biblioteca
+                <img src="Logo.jpg" alt="Logo">
+                La Gran Biblioteca
             </a>
         </div>
     </nav>

@@ -1,4 +1,4 @@
-<!-- 
+<!--
  * [LUIS RAMOS]: Este es el código de nuestra primera página, incluimos una API de frases y las opciones para registrarse o iniciar sesión.
 -->
 <!DOCTYPE html>
@@ -7,218 +7,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Gran Biblioteca</title>
-    
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); /* Fuente de Google Fonts */
-        
-        /* Estilos generales */
-        body {
-            font-family: 'Raleway', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #f0f2f5 40%, #ffffff 100%);
-            color: #333;
+            box-sizing: border-box;
         }
 
-        /* Estilos para el encabezado, navegación, contenido y pie de página */
-        .header {
-            background-color: #2C3E50;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f0f2f5 40%, #ffffff 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header / Navbar */
+        .header-custom {
+            background: #2C3E50;
             color: white;
-            padding: 20px 0;
-            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .header img {
-            height: 50px;
+        .header-custom .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
 
-        .header h1 {
-            font-size: 2.5em;
+        .header-custom img {
+            height: 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-custom h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
             margin: 0;
         }
 
-        .header p {
-            margin: 5px 0;
-            font-size: 1.2em;
+        .header-custom .tagline {
+            font-size: 1.1rem;
             color: #BDC3C7;
+            margin-bottom: 1rem;
         }
 
-        /* Estilos para la navegación */
-        .nav {
-            margin: 20px 0;
-            text-align: center;
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ecf0f1;
-            font-size: 1.1em;
-            padding: 10px 20px;
+        .nav-buttons .btn-custom {
+            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+            border: none;
             border-radius: 25px;
-            background: #E74C3C;
-            transition: background 0.3s ease, transform 0.3s ease;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .nav a:hover {
-            background: #C0392B;
-            transform: scale(1.05);
+        .nav-buttons .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%);
         }
 
-        /* Estilos para el contenido */
-        .content {
-            padding: 20px 20px;
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 3rem 1rem;
         }
 
-        .section {
-            margin: 20px auto;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
+        .quote-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 0 auto 3rem;
+            max-width: 800px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease;
+            animation: fadeIn 0.6s ease-out;
         }
 
-        .section:hover {
-            transform: translateY(-10px);
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #2C3E50;
+        .quote-card h3 {
+            font-size: 1.8rem;
+            color: #E74C3C;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
-        .section p {
-            font-size: 1.1em;
+        .quote-card p {
+            font-size: 1.3rem;
+            color: #34495E;
+            font-style: italic;
             line-height: 1.8;
-            color: #7F8C8D;
         }
 
-        .section img {
-            max-width: 80%;
-            border-radius: 16px;
-            margin: 20px 0;
-            transition: transform 0.3s ease;
-        }
-
-        .section img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Estilos para el pie de página */
-        .footer {
-            background-color: #2C3E50;
-            color: #ecf0f1;
-            padding: 20px 0;
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 0 auto 2rem;
+            max-width: 900px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .footer p {
-            margin: 0;
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
         }
 
-        .footer .social-icons {
-            margin-top: 10px;
+        .info-card h2 {
+            font-size: 2rem;
+            color: #2C3E50;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
 
-        .footer .social-icons a {
-            margin: 0 10px;
-            color: #ecf0f1;
-            font-size: 1.5em;
+        .info-card p {
+            font-size: 1.1rem;
+            color: #7F8C8D;
+            line-height: 1.8;
+        }
+
+        .info-card a {
+            color: #E74C3C;
+            font-weight: 600;
+            text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        .footer .social-icons a:hover {
+        .info-card a:hover {
+            color: #C0392B;
+            text-decoration: underline;
+        }
+
+        .info-card .btn-action {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-card .btn-action:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(44, 62, 80, 0.4);
+            background: linear-gradient(135deg, #34495E 0%, #2C3E50 100%);
+        }
+
+        /* Footer */
+        .footer-custom {
+            background: #2C3E50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-custom p {
+            margin: 0 0 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #ecf0f1;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-links a:hover {
             color: #E74C3C;
         }
 
-        /* Estilos para la sección de la frase */
-        .quote-section {
-            margin: 20px auto;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: 12px;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            text-align: center;
-        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-custom h1 {
+                font-size: 2rem;
+            }
 
-        .quote-section h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            color: #2980B9;
-        }
+            .quote-card,
+            .info-card {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
 
-        .quote-section p {
-            font-size: 1.4em;
-            color: #34495E;
-            font-style: italic;
+            .nav-buttons .btn-custom {
+                padding: 0.6rem 1.5rem;
+                font-size: 1rem;
+            }
         }
     </style>
-    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container">
+            <div class="logo-container">
+                <img src="Logo.jpg" alt="Logo La Gran Biblioteca">
+                <h1>La Gran Biblioteca</h1>
+            </div>
+            <p class="tagline">¡Lee, explora y descubre!</p>
+            <div class="nav-buttons">
+                <a href="login.php" class="btn-custom">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    Iniciar Sesión
+                </a>
+                <a href="register.php" class="btn-custom">
+                    <i class="bi bi-person-plus"></i>
+                    Registro
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Quote Section -->
+            <div class="quote-card">
+                <h3>
+                    <i class="bi bi-chat-quote me-2"></i>
+                    Frase para reflexionar
+                </h3>
+                <p id="quote">Cargando frase...</p>
+            </div>
+
+            <!-- Login Section -->
+            <div class="info-card">
+                <i class="bi bi-door-open" style="font-size: 3rem; color: #E74C3C; margin-bottom: 1rem;"></i>
+                <h2>Iniciar Sesión</h2>
+                <p>¿Ya tienes una cuenta? Inicia sesión y accede a tu biblioteca personal.</p>
+                <a href="login.php" class="btn btn-action">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    Inicia sesión aquí
+                </a>
+            </div>
+
+            <!-- Register Section -->
+            <div class="info-card">
+                <i class="bi bi-person-check" style="font-size: 3rem; color: #2C3E50; margin-bottom: 1rem;"></i>
+                <h2>Registro de Usuario</h2>
+                <p>¿No tienes una cuenta? Regístrate ahora y comienza tu viaje literario.</p>
+                <a href="register.php" class="btn btn-action">
+                    <i class="bi bi-person-plus"></i>
+                    Regístrate ahora
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <p>&copy; 2024 La Gran Biblioteca. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="bi bi-twitter-x"></i> X
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         // Cargar una frase al cargar la página
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes') // Obtener una frase
-                .then(response => response.json()) // Convertir la respuesta a JSON
-                .then(data => { 
-                    document.getElementById('quote').textContent = `"${data[0]}"`; // Mostrar la frase en la página
+            fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('quote').textContent = `"${data[0]}"`;
                 })
-                .catch(error => { // Manejar errores
-                    console.error('Error fetching the quote:', error); 
+                .catch(error => {
+                    console.error('Error fetching the quote:', error);
                     document.getElementById('quote').textContent = 'No se pudo cargar la frase. Inténtalo más tarde.';
                 });
         });
     </script>
-    
-</head>
-<body>
-        <!-- Encabezado de la página -->
-    <div class="header">
-        <img src="Logo.jpg" alt="Logo">
-        <h1>La Gran Biblioteca</h1>
-        <p>¡Lee, explora y descubre!</p>
-        <div class="nav">
-            <a href="login.php">Iniciar Sesión</a>
-            <a href="register.php">Registro</a>
-        </div>
-    </div>
-
-    <div class="content">
-        <!-- Frase -->
-        <div class="quote-section" id="quote-section">
-            <h3>Frase para reflexionar</h3>
-            <p id="quote">Cargando frase...</p>
-        </div>
-        <!-- Para iniciar sesión -->
-        <div class="section" id="login">
-            <h2>Iniciar Sesión</h2>
-            <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a>.</p>
-        </div>
-
-        <!-- Para registrarse -->
-        <div class="section" id="register">
-            <h2>Registro de Usuario</h2>
-            <p>¿No tienes una cuenta? <a href="register.php">Regístrate ahora</a>.</p>
-        </div>
-    </div>
-        <!-- Pie de página -->
-    <div class="footer">
-        <p>&copy; 2024 La Gran Biblioteca. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">X</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
-    </div>
-
 </body>
 </html>
 
