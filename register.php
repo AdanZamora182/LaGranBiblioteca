@@ -2,22 +2,39 @@
 //[TRISTAN EGUIA]: Código para registrar un usuario y guardarlo en la base de datos
 include 'config.php';
 
+// Variable para almacenar mensajes de error
+$error_message = "";
+
 // Procesar el formulario cuando se envíe el registro de usuario 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $contraseña = $_POST["contraseña"];
+    $verificar_contraseña = $_POST["verificar_contraseña"];
 
-    // Insertar los datos del usuario en la base de datos
-    $sql = "INSERT INTO usuarios (nombre, email, contraseña) VALUES ('$nombre', '$email', '$contraseña')";
-    
-    // Ejecutar la consulta
-    if (mysqli_query($conn, $sql)) {
-        // Redirigir al index después del registro exitoso
-        header("Location: index.php");
-        exit();
+    // Validar que las contraseñas coincidan
+    if ($contraseña !== $verificar_contraseña) {
+        $error_message = "Las contraseñas no coinciden. Por favor, verifica que ambas contraseñas sean iguales.";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        // Hashear la contraseña para mayor seguridad
+        $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+        
+        // Usar prepared statements para evitar SQL injection
+        $stmt = mysqli_prepare($conn, "INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)");
+        mysqli_stmt_bind_param($stmt, "sss", $nombre, $email, $contraseña_hash);
+        
+        // Ejecutar la consulta
+        if (mysqli_stmt_execute($stmt)) {
+            // Redirigir al index después del registro exitoso
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+            header("Location: index.php");
+            exit();
+        } else {
+            $error_message = "Error al registrar el usuario: " . mysqli_error($conn);
+        }
+        
+        mysqli_stmt_close($stmt);
     }
 
     mysqli_close($conn);
@@ -151,7 +168,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="content">
             <h2>Registro de Usuario</h2>
             
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"> <!--- Formulario de registro -->
+            <?php if (!empty($error_message)): ?>
+                <div style="background-color: #f8d7da; color: #721c24; padding: 12px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #f5c6cb;">
+                    <strong>Error:</strong> <?php echo htmlspecialchars($error_message); ?>
+                </div>
+            <?php endif; ?>
+            
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="registerForm"> <!--- Formulario de registro -->
                 
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -170,10 +193,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </button>
                 </div>
                 
-                <!-- Nuevo campo para verificar contraseña (no funcional) -->
+                <!-- Campo para verificar contraseña -->
                 <label for="verificar_contraseña">Verificar Contraseña:</label>
                 <div style="position: relative; margin-bottom: 15px;">
-                    <input type="password" id="verificar_contraseña" name="verificar_contraseña" style="padding-right: 40px; width: 100%;">
+                    <input type="password" id="verificar_contraseña" name="verificar_contraseña" required style="padding-right: 40px; width: 100%;">
                     <button type="button" id="eye-btn-verify" tabindex="-1"
                         style="position: absolute; right: 8px; top: 38%; transform: translateY(-50%);
                                background: transparent; border: none; outline: none;
@@ -181,6 +204,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <i class="bi bi-eye" id="eye-icon-verify" style="font-size: 1.2em; color: #888; transition: color 0.2s; display: block; margin: 0;"></i>
                     </button>
                 </div>
+                
+                <div id="password-error" style="color:#E74C3C; font-size:1em; margin-bottom:10px; display:none;"></div>
                 
                 <input type="submit" value="Registrar">
             </form>
@@ -237,6 +262,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     eyeIconVerify.classList.replace('bi-eye-slash', 'bi-eye');
                 }
             });
+        });
+        
+        // Validación de contraseñas iguales antes de enviar el formulario
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            var password = document.getElementById('contraseña').value;
+            var verifyPassword = document.getElementById('verificar_contraseña').value;
+            var errorDiv = document.getElementById('password-error');
+            if (password !== verifyPassword) {
+                errorDiv.textContent = "Las contraseñas no coinciden.";
+                errorDiv.style.display = "block";
+                e.preventDefault();
+            } else {
+                errorDiv.style.display = "none";
+            }
         });
     </script>
 </body>

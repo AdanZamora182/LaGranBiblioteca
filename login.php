@@ -198,12 +198,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-        // Efecto visual al hacer clic en el botón del ojo
+        // Funcionalidad para mostrar/ocultar contraseña (igual que register.php)
         document.addEventListener('DOMContentLoaded', function() {
             var eyeBtn = document.getElementById('eye-btn');
             var eyeIcon = document.getElementById('eye-icon');
+            var passwordInput = document.getElementById('contraseña');
+            
             eyeBtn.addEventListener('click', function() {
                 eyeIcon.classList.toggle('active-eye');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    eyeIcon.classList.replace('bi-eye', 'bi-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    eyeIcon.classList.replace('bi-eye-slash', 'bi-eye');
+                }
             });
         });
     </script>

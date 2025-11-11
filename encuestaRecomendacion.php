@@ -381,7 +381,7 @@
       <div class="pregunta">
         <label>9. ¿Qué tanto disfrutas las historias con desarrollo emocional?</label>
         <div class="range-container">
-          <input type="range" min="0" max="1" step="0.1" name="emocional" id="emocional-range" oninput="mostrarValor(this)" value="0.5">
+          <input type="range" min="0" max="1" step="0.1" name="emocional" oninput="mostrarValor(this)">
           <span class="valor">0.5</span>
           <div class="range-marks">
             <span></span><span></span><span></span><span></span><span></span>
@@ -481,7 +481,7 @@
       <div class="pregunta">
         <label>14. ¿Qué tan importante es para ti que el libro tenga un mensaje positivo?</label>
         <div class="range-container">
-          <input type="range" min="0" max="1" step="0.1" name="mensaje" id="mensaje-range" oninput="mostrarValor(this)" value="0.5">
+          <input type="range" min="0" max="1" step="0.1" name="mensaje" oninput="mostrarValor(this)">
           <span class="valor">0.5</span>
           <div class="range-marks">
             <span></span><span></span><span></span><span></span><span></span>
@@ -591,22 +591,6 @@
       const sliders = document.querySelectorAll('input[type="range"]');
       sliders.forEach(slider => {
         mostrarValor(slider);
-      });
-      
-      // Añadir listeners específicos para las preguntas 9 y 14
-      const emocionalSlider = document.getElementById('emocional-range');
-      const mensajeSlider = document.getElementById('mensaje-range');
-      
-      // Forzar el valor de emocional a 0.5 siempre
-      emocionalSlider.addEventListener('input', function() {
-        this.value = 0.5;
-        mostrarValor(this);
-      });
-      
-      // Forzar el valor de mensaje a 0.5 siempre
-      mensajeSlider.addEventListener('input', function() {
-        this.value = 0.5;
-        mostrarValor(this);
       });
     }
     
