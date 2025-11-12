@@ -134,7 +134,6 @@ $username = htmlspecialchars($_SESSION['username']); // Escapar salida para evit
             <h1>RECOMENDACIONES DE LIBROS</h1> <!-- Título principal -->
             <p>Bienvenido, <?php echo $username; ?>.</p> <!-- Mostrar el nombre de usuario -->
             <a href="logout.php" class="logout-link">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
-            <a href="home.php" class="search-books-link">Mi Cuenta</a> <!-- Nuevo botón Mi Cuenta -->
             <a href="busquedalibros.php" class="search-books-link">Buscar Libros</a> <!-- Enlace para buscar libros -->
             <a href="reviews.php" class="add-review-link">Reseñas</a> <!-- Enlace para ver reseñas -->
             <a href="encuestaRecomendacion.php" class="search-books-link">Encuesta de Recomendación</a> <!-- Nuevo botón -->
