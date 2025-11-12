@@ -42,18 +42,48 @@
             z-index: 1000;
         }
 
+        /* Asegurar que el contenido del header esté centrado independientemente de Bootstrap */
+        .header-custom .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
         .header-custom .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem; /* Reducir espacio entre elementos del logo */
+        }
+
+        .header-custom .logo-wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0; /* Remover margen para usar gap del contenedor */
         }
 
+        /* Contenedor del logo sin fondo */
+        .logo-wrapper {
+            background: transparent;
+            padding: 0.15rem; /* pequeño espaciado opcional */
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Imagen del logo sin fondo ni sombra para que el contenedor sea transparente */
         .header-custom img {
             height: 60px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: none;
+            background: transparent;
+            display: block;
         }
 
         .header-custom h1 {
@@ -65,7 +95,9 @@
         .header-custom .tagline {
             font-size: 1.1rem;
             color: #BDC3C7;
-            margin-bottom: 1rem;
+            margin: 0; /* Remover márgenes para centrar con flexbox */
+            text-align: center;
+            width: 100%;
         }
 
         .nav-buttons {
@@ -259,10 +291,12 @@
     <header class="header-custom">
         <div class="container">
             <div class="logo-container">
-                <img src="Logo.jpg" alt="Logo La Gran Biblioteca">
+                <div class="logo-wrapper">
+                    <img src="Logo.jpg" alt="Logo La Gran Biblioteca">
+                </div>
                 <h1>La Gran Biblioteca</h1>
+                <p class="tagline">¡Lee, explora y descubre!</p>
             </div>
-            <p class="tagline">¡Lee, explora y descubre!</p>
             <div class="nav-buttons">
                 <a href="login.php" class="btn-custom">
                     <i class="bi bi-box-arrow-in-right"></i>
