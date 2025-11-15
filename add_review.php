@@ -23,6 +23,7 @@ $id_usuario = $_SESSION['user_id'];
 $correo_electronico = isset($_SESSION['user_email']) ? $_SESSION['user_email'] : ''; // Verifica si el correo electrónico está definido
 
 $success_message = '';
+$error_message = '';
 
 // Manejo de formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -33,22 +34,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Nos aseguramos de que el ID del usuario y del libro están disponibles
     if (empty($id_usuario) || empty($id_libro) || empty($nombre_libro)) {
-        echo "Error: Usuario, libro o nombre no especificado.";
-        exit();
-    }
-
-    // Insertamos la reseña en la base de datos utilizando sentencias preparadas
-    $stmt = $conn->prepare("INSERT INTO reseñas (correo_electronico, calificacion, comentario, id_usuario, id_libro, nombre_libro) VALUES (?, ?, ?, ?, ?, ?)"); 
-    $stmt->bind_param("sisiss", $correo_electronico, $calificacion, $comentario, $id_usuario, $id_libro, $nombre_libro);
-
-    // Ejecutamos la sentencia preparada
-    if ($stmt->execute()) {
-        $success_message = "Reseña agregada exitosamente.";
+        $error_message = "Error: Usuario, libro o nombre no especificado.";
     } else {
-        echo "Error: " . $stmt->error;
-    }
+        // Verificar si ya existe una reseña de este usuario para este libro
+        $check_stmt = $conn->prepare("SELECT id FROM reseñas WHERE id_usuario = ? AND id_libro = ?");
+        $check_stmt->bind_param("is", $id_usuario, $id_libro);
+        $check_stmt->execute();
+        $result = $check_stmt->get_result();
+        
+        if ($result->num_rows > 0) {
+            $error_message = "Ya has agregado una reseña para este libro. No puedes agregar múltiples reseñas del mismo libro.";
+        } else {
+            // Insertamos la reseña en la base de datos utilizando sentencias preparadas
+            $stmt = $conn->prepare("INSERT INTO reseñas (correo_electronico, calificacion, comentario, id_usuario, id_libro, nombre_libro) VALUES (?, ?, ?, ?, ?, ?)"); 
+            $stmt->bind_param("sisiss", $correo_electronico, $calificacion, $comentario, $id_usuario, $id_libro, $nombre_libro);
 
-    $stmt->close();
+            // Ejecutamos la sentencia preparada
+            if ($stmt->execute()) {
+                $success_message = "Reseña agregada exitosamente.";
+            } else {
+                $error_message = "Error al agregar la reseña: " . $stmt->error;
+            }
+            $stmt->close();
+        }
+        $check_stmt->close();
+    }
     mysqli_close($conn);
 }
 ?>
@@ -160,6 +170,75 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .autocomplete-container.open #titulo {
             border-radius: 5px 5px 0 0;
         }
+        
+        /* Estilos para la información del libro seleccionado */
+        .book-info-container {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .book-info-container.show {
+            display: block;
+        }
+        
+        .book-info-content {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .book-cover {
+            flex-shrink: 0;
+        }
+        
+        .book-cover img {
+            max-width: 120px;
+            max-height: 160px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .book-details {
+            flex: 1;
+        }
+        
+        .book-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+        
+        .book-author, .book-publisher {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        
+        .book-description {
+            color: #555;
+            line-height: 1.4;
+            font-size: 0.9em;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .book-info-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .book-cover img {
+                max-width: 100px;
+                max-height: 140px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,9 +255,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         <section class="form-section">
             <?php if ($success_message): ?>
-                <div class="alert alert-success alert-dismissible fade show" role="alert"> <!--Mensaje de éxito -->
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <?php echo $success_message; ?>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <!-- Botón para cerrar el mensaje --> 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif; ?>
+            
+            <?php if ($error_message): ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?php echo $error_message; ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -193,6 +281,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <input type="hidden" id="id_libro" name="id_libro" required> 
                 <input type="hidden" id="nombre_libro" name="nombre_libro" required> 
+                
+                <!-- Información del libro seleccionado -->
+                <div class="book-info-container" id="book-info-container">
+                    <div class="book-info-content">
+                        <div class="book-cover">
+                            <img id="book-cover-img" src="" alt="Portada del libro">
+                        </div>
+                        <div class="book-details">
+                            <div class="book-title" id="book-title"></div>
+                            <div class="book-author" id="book-author"></div>
+                            <div class="book-publisher" id="book-publisher"></div>
+                            <div class="book-description" id="book-description"></div>
+                        </div>
+                    </div>
+                </div>
                 
                 <label for="calificacion">Calificación (1-5):</label>
                 <input type="number" id="calificacion" name="calificacion" min="1" max="5" required> 
@@ -221,11 +324,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 return;
             }
             
-            fetch(`search_books.php?autocomplete=1&query=${encodeURIComponent(query)}`)
+            // Buscar en la API de Google Books directamente
+            const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&langRestrict=es&maxResults=10`;
+            
+            fetch(apiUrl)
                 .then(response => response.json())
-                .then(books => {
-                    currentBooks = books;
-                    showDropdown(books);
+                .then(data => {
+                    if (data.items) {
+                        const books = data.items.map(item => ({
+                            id: item.id,
+                            title: item.volumeInfo.title || 'Título no disponible',
+                            authors: item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Autor no disponible',
+                            publisher: item.volumeInfo.publisher || 'Editorial no disponible',
+                            description: item.volumeInfo.description || 'Descripción no disponible',
+                            thumbnail: item.volumeInfo.imageLinks?.thumbnail || 'https://via.placeholder.com/120x160?text=Sin+Portada',
+                            display: `${item.volumeInfo.title || 'Sin título'} - ${item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Autor desconocido'}`
+                        }));
+                        currentBooks = books;
+                        showDropdown(books);
+                    } else {
+                        currentBooks = [];
+                        showDropdown([]);
+                    }
                 })
                 .catch(error => {
                     console.error('Error al buscar libros:', error);
@@ -266,7 +386,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             document.getElementById('titulo').value = book.display;
             document.getElementById('id_libro').value = book.id;
             document.getElementById('nombre_libro').value = book.title;
+            
+            // Mostrar información del libro
+            showBookInfo(book);
             hideDropdown();
+        }
+        
+        // Mostrar información del libro seleccionado
+        function showBookInfo(book) {
+            const container = document.getElementById('book-info-container');
+            const coverImg = document.getElementById('book-cover-img');
+            const title = document.getElementById('book-title');
+            const author = document.getElementById('book-author');
+            const publisher = document.getElementById('book-publisher');
+            const description = document.getElementById('book-description');
+            
+            // Establecer la información del libro
+            coverImg.src = book.thumbnail || 'https://via.placeholder.com/120x160?text=Sin+Portada';
+            coverImg.alt = `Portada de ${book.title}`;
+            title.textContent = book.title || 'Título no disponible';
+            author.textContent = book.authors ? `Autor(es): ${book.authors}` : 'Autor no disponible';
+            publisher.textContent = book.publisher ? `Editorial: ${book.publisher}` : 'Editorial no disponible';
+            description.textContent = book.description || 'Descripción no disponible';
+            
+            // Mostrar el contenedor
+            container.classList.add('show');
+        }
+        
+        // Ocultar información del libro
+        function hideBookInfo() {
+            const container = document.getElementById('book-info-container');
+            container.classList.remove('show');
         }
         
         // Event listeners
@@ -274,6 +424,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             clearTimeout(searchTimeout);
             searchTimeout = setTimeout(() => {
                 buscarLibros(e.target.value);
+                // Ocultar información del libro si el usuario está escribiendo
+                if (e.target.value !== document.getElementById('nombre_libro').value) {
+                    hideBookInfo();
+                    document.getElementById('id_libro').value = '';
+                    document.getElementById('nombre_libro').value = '';
+                }
             }, 300);
         });
         
@@ -322,11 +478,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         });
 
-        // Ocultar el mensaje de éxito después de 3 segundos
+        // Ocultar los mensajes después de 5 segundos
         $(document).ready(function() {
             setTimeout(function() {
-                $('.alert-success').alert('close');
-            }, 3000);
+                $('.alert-success, .alert-danger').alert('close');
+            }, 5000);
         });
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
