@@ -29,12 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             mysqli_stmt_close($stmt_check);
             
-            // Hashear la contraseña para mayor seguridad
-            $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
-            
             // Usar prepared statements para evitar SQL injection
             $stmt = mysqli_prepare($conn, "INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)");
-            mysqli_stmt_bind_param($stmt, "sss", $nombre, $email, $contraseña_hash);
+            mysqli_stmt_bind_param($stmt, "sss", $nombre, $email, $contraseña);
             
             // Ejecutar la consulta
             if (mysqli_stmt_execute($stmt)) {
