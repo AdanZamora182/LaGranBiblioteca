@@ -16,25 +16,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($contraseña !== $verificar_contraseña) {
         $error_message = "Las contraseñas no coinciden. Por favor, verifica que ambas contraseñas sean iguales.";
     } else {
-        // Hashear la contraseña para mayor seguridad
-        $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+        // Verificar si el correo ya existe en la base de datos
+        $stmt_check = mysqli_prepare($conn, "SELECT id FROM usuarios WHERE email = ?");
+        mysqli_stmt_bind_param($stmt_check, "s", $email);
+        mysqli_stmt_execute($stmt_check);
+        mysqli_stmt_store_result($stmt_check);
         
-        // Usar prepared statements para evitar SQL injection
-        $stmt = mysqli_prepare($conn, "INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)");
-        mysqli_stmt_bind_param($stmt, "sss", $nombre, $email, $contraseña_hash);
-        
-        // Ejecutar la consulta
-        if (mysqli_stmt_execute($stmt)) {
-            // Redirigir al index después del registro exitoso
-            mysqli_stmt_close($stmt);
-            mysqli_close($conn);
-            header("Location: index.php");
-            exit();
+        if (mysqli_stmt_num_rows($stmt_check) > 0) {
+            // El correo ya está registrado
+            $error_message = "Este correo electrónico ya está registrado. Por favor, utiliza otro correo o inicia sesión.";
+            mysqli_stmt_close($stmt_check);
         } else {
-            $error_message = "Error al registrar el usuario: " . mysqli_error($conn);
+            mysqli_stmt_close($stmt_check);
+            
+            // Hashear la contraseña para mayor seguridad
+            $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+            
+            // Usar prepared statements para evitar SQL injection
+            $stmt = mysqli_prepare($conn, "INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)");
+            mysqli_stmt_bind_param($stmt, "sss", $nombre, $email, $contraseña_hash);
+            
+            // Ejecutar la consulta
+            if (mysqli_stmt_execute($stmt)) {
+                // Redirigir al index después del registro exitoso
+                mysqli_stmt_close($stmt);
+                mysqli_close($conn);
+                header("Location: index.php");
+                exit();
+            } else {
+                $error_message = "Error al registrar el usuario: " . mysqli_error($conn);
+            }
+            
+            mysqli_stmt_close($stmt);
         }
-        
-        mysqli_stmt_close($stmt);
     }
 
     mysqli_close($conn);
